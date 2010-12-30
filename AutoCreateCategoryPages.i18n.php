@@ -384,7 +384,7 @@ $messages['mk'] = array(
 	'autocreatecategorypages-desc' => 'Со зачувувањето, автомарски создавај ги страниците кои недостасуваат во категоријата',
 	'autocreatecategorypages-stub' => 'Ова е категориска страница.
 Ги наведува сите страници во категоријата „$1“ како и сите поткатегории на категоријата „$1“, ако постојат.',
-	'autocreatecategorypages-createdby' => 'Автоматски создадено од проширувањето AutoCreateCategoryPages.',
+	'autocreatecategorypages-createdby' => 'Автоматски создадено од додатокот AutoCreateCategoryPages.',
 	'autocreatecategorypages-editor' => 'Автоматски создавач на категории',
 );
 
