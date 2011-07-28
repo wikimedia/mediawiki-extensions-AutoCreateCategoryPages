@@ -388,6 +388,17 @@ $messages['mk'] = array(
 	'autocreatecategorypages-editor' => 'Автоматски создавач на категории',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'autocreatecategorypages-desc' => 'Wujudkan laman kategori yang tertinggal secara automatik semasa menyimpan',
+	'autocreatecategorypages-stub' => 'Ini ialah laman kategori.
+Ia menyenaraikan semua laman dalam kategori "$1" dan juga subkategori dalam kategori "$1" jika ada,',
+	'autocreatecategorypages-createdby' => 'Diwujudkan secara automatik oleh sambungan AutoCreateCategoryPages.',
+	'autocreatecategorypages-editor' => 'Pembuka kategori automatik',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
