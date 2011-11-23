@@ -81,7 +81,7 @@ $messages['bg'] = array(
 Тя съдържа всички страници в категория „$1“ както и всички подкатегории на категорията „$1“, ако такива са налични.',
 );
 
-/** Bahasa Banjar (Bahasa Banjar)
+/** Banjar (Bahasa Banjar)
  * @author J Subhi
  */
 $messages['bjn'] = array(
@@ -555,7 +555,7 @@ Tukaj so navedene vse strani v kategoriji »$1«, kakor tudi vse podkategorije k
 	'autocreatecategorypages-editor' => 'Samodejni ustvarjalec kategorij',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -563,7 +563,7 @@ $messages['sr-ec'] = array(
 	'autocreatecategorypages-editor' => 'Аутоматско прављење категорија',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
