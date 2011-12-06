@@ -60,6 +60,17 @@ $messages['arz'] = array(
 	'autocreatecategorypages-editor' => 'منشئ تصنيف تلقائي',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'autocreatecategorypages-desc' => 'Crea automáticamente les páxines de categoría que falten al guardar',
+	'autocreatecategorypages-stub' => 'Esta ye una páxina de categoría.
+Llista toles páxines de la categoría «$1» igual que toles sub-categoríes de la categoría «$1» si esistieren.',
+	'autocreatecategorypages-createdby' => 'Creada automáticamente pola estensión AutoCreateCategoryPages.',
+	'autocreatecategorypages-editor' => 'Creador automáticu de categoríes',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
