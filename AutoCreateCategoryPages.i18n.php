@@ -704,5 +704,6 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'autocreatecategorypages-createdby' => '自動建立由 自動建立分類頁面 擴充套件。',
+	'autocreatecategorypages-editor' => '自動分類生成器',
 );
 
