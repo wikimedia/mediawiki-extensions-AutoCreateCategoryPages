@@ -410,6 +410,17 @@ Ia menyenaraikan semua laman dalam kategori "$1" dan juga subkategori dalam kate
 	'autocreatecategorypages-editor' => 'Pembuka kategori automatik',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'autocreatecategorypages-desc' => 'Opprett manglende kategorisider automatisk ved lagring',
+	'autocreatecategorypages-stub' => 'Dette er en kategoriside.
+Den lister opp alle sidene i kategorien «$1» i tillegg til eventuelle underkategorier av «$» om de finnes.',
+	'autocreatecategorypages-createdby' => 'Opprettet automatisk av AutoCreateCategoryPages-utvidelsen.',
+	'autocreatecategorypages-editor' => 'Automatisk kategorioppretter',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -430,17 +441,6 @@ $messages['nn'] = array(
 Ho lista opp alle sidene i kategorien «$1» i tillegg til eventuelle underkategoriar av «$» om dei finst.',
 	'autocreatecategorypages-createdby' => 'Oppretta automatisk av AutoCreateCategoryPages-utvidinga.',
 	'autocreatecategorypages-editor' => 'Automatisk kategorioppretting',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'autocreatecategorypages-desc' => 'Opprett manglende kategorisider automatisk ved lagring',
-	'autocreatecategorypages-stub' => 'Dette er en kategoriside.
-Den lister opp alle sidene i kategorien «$1» i tillegg til eventuelle underkategorier av «$» om de finnes.',
-	'autocreatecategorypages-createdby' => 'Opprettet automatisk av AutoCreateCategoryPages-utvidelsen.',
-	'autocreatecategorypages-editor' => 'Automatisk kategorioppretter',
 );
 
 /** Occitan (Occitan)
