@@ -435,7 +435,7 @@ Ho lista opp alle sidene i kategorien «$1» i tillegg til eventuelle underkateg
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'autocreatecategorypages-desc' => 'Opprett manglende kategorisider automatisk ved lagring',
 	'autocreatecategorypages-stub' => 'Dette er en kategoriside.
 Den lister opp alle sidene i kategorien «$1» i tillegg til eventuelle underkategorier av «$» om de finnes.',
