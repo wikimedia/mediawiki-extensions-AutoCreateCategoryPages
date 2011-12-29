@@ -661,10 +661,14 @@ $messages['uk'] = array(
 	'autocreatecategorypages-editor' => 'Автоматичний творець категорій',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel')
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
+	'autocreatecategorypages-desc' => 'Sädab kategorijad, kudambid völ ei ole olnu, avtomatižikš mušthopanendan aigan',
+	'autocreatecategorypages-stub' => 'Nece om kategorijan lehtpol\'.
+Täs om kaik "$1"-kategorijan lehtpoled i kaik  "$1"-kategorijan alakategorijad, ku ned oma olmas.',
+	'autocreatecategorypages-createdby' => 'Sätud avtomatižikš AutoCreateCategoryPages-ližan abul.',
 	'autocreatecategorypages-editor' => 'Avtomatine kategorijoiden sädai',
 );
 
