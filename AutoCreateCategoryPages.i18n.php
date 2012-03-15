@@ -387,6 +387,17 @@ Et stinn all d\'Säiten aus der Kategorie "$1" drop genee wéi all Ënnerkategor
 	'autocreatecategorypages-editor' => 'Kategorien automatesch maachen',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'autocreatecategorypages-desc' => 'Tlangzarh rualin pawl phêk la awm lo a siam thar',
+	'autocreatecategorypages-stub' => 'Hei hi pawl phêk a ni.
+"$1" pawla phêk zawng zawng a pholan bâkah "$1" pawlpéng zawng zawng, a awm chuan, a pho lang bawk.',
+	'autocreatecategorypages-createdby' => 'PawlPhêkInsiamtirn hmanga insiam a ni.',
+	'autocreatecategorypages-editor' => 'Pawl mahnia insiamtirtu',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  * @author Brest
