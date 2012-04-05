@@ -684,13 +684,14 @@ Täs om kaik "$1"-kategorijan lehtpoled i kaik  "$1"-kategorijan alakategorijad,
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'autocreatecategorypages-desc' => 'Tự động tạo ra trang thể loại còn thiếu khi lưu trang',
 	'autocreatecategorypages-stub' => 'Đây là một trang thể loại.
 Nó liệt kê tất cả các trang trong thể loại “$1” cũng như tất cả các thể loại con của thể loại “$1” nếu có.',
-	'autocreatecategorypages-createdby' => 'Được bộ mở rộng AutoCreateCategoryPages tự động tạo ra.',
+	'autocreatecategorypages-createdby' => 'Được phần mở rộng AutoCreateCategoryPages tự động tạo ra.',
 	'autocreatecategorypages-editor' => 'Bộ tự động tạo thể loại',
 );
 
