@@ -445,6 +445,7 @@ Hier vindt u de pagina\'s in de categorie "$1" als ook alle bestaande ondercateg
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'autocreatecategorypages-desc' => 'Opprett manglande kategorisider automatisk ved lagring',
@@ -672,7 +673,7 @@ $messages['uk'] = array(
 	'autocreatecategorypages-editor' => 'Автоматичний творець категорій',
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
