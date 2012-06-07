@@ -346,10 +346,12 @@ Di seguito sono elencate tutte le pagine nella categoria "$1" e tutte le sottoca
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'autocreatecategorypages-desc' => '保存時に未作成のカテゴリページを自動的に作成する',
-	'autocreatecategorypages-stub' => 'これはカテゴリページです。カテゴリ「$1」に入っているすべてのページと、存在する場合は、カテゴリ「$1」のすべてのサブカテゴリを一覧します。',
+	'autocreatecategorypages-stub' => 'これはカテゴリページです。
+カテゴリ「$1」に属するすべてのページを列挙します。カテゴリ「$1」に下位カテゴリがある場合はそれもすべて列挙します。',
 	'autocreatecategorypages-createdby' => '拡張機能 AutoCreateCategoryPages によって自動的に作成',
 	'autocreatecategorypages-editor' => '自動カテゴリ作成係',
 );
