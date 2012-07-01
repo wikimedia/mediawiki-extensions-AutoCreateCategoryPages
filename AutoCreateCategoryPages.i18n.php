@@ -71,7 +71,7 @@ Llista toles páxines de la categoría «$1» igual que toles sub-categoríes de
 	'autocreatecategorypages-editor' => 'Creador automáticu de categoríes',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -153,7 +153,7 @@ Sie listet alle Seiten in der Kategorie „$1“ sowie alle Unterkategorien der 
 	'autocreatecategorypages-editor' => 'Automatische Kategorienerstellung',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -253,7 +253,7 @@ $messages['ga'] = array(
 	'autocreatecategorypages-editor' => 'Cuntas cruthóir uathoibríoch',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -287,7 +287,7 @@ $messages['he'] = array(
 	'autocreatecategorypages-editor' => 'יוצר הקטגוריות האוטומטי',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
