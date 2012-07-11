@@ -423,7 +423,7 @@ Ia menyenaraikan semua laman dalam kategori "$1" dan juga subkategori dalam kate
 	'autocreatecategorypages-editor' => 'Pembuka kategori automatik',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -675,7 +675,7 @@ $messages['uk'] = array(
 	'autocreatecategorypages-editor' => 'Автоматичний творець категорій',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
