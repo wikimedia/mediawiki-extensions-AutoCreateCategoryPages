@@ -547,6 +547,15 @@ $messages['ru'] = array(
 	'autocreatecategorypages-editor' => 'Автоматический создатель категорий',
 );
 
+/** Sakha (саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'autocreatecategorypages-desc' => 'Бигэргэтэргэ суох категориялары бэйэтэ эбэн биэрэр',
+	'autocreatecategorypages-stub' => 'Бу категория сирэйэ.
+Манна «$1» категория сирэйдэрэ уонна, баар буоллахтарына, «$1» категория субкатегориялара киирэллэр.',
+);
+
 /** Sinhala (සිංහල)
  * @author Calcey
  * @author චතුනි අලහප්පෙරුම
