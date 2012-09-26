@@ -730,10 +730,12 @@ $messages['zh-hans'] = array(
 	'autocreatecategorypages-editor' => '自动分类生成器',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
+	'autocreatecategorypages-stub' => '這是一個分類頁面。
+它列出了分類"$1"及其所有子分類中的全部頁面。',
 	'autocreatecategorypages-createdby' => '自動建立由 自動建立分類頁面 擴充套件。',
 	'autocreatecategorypages-editor' => '自動分類生成器',
 );
