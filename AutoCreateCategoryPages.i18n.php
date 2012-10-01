@@ -349,10 +349,10 @@ Di seguito sono elencate tutte le pagine nella categoria "$1" e tutte le sottoca
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'autocreatecategorypages-desc' => '保存時に未作成のカテゴリページを自動的に作成する',
-	'autocreatecategorypages-stub' => 'これはカテゴリページです。
-カテゴリ「$1」に属するすべてのページを列挙します。カテゴリ「$1」に下位カテゴリがある場合はそれもすべて列挙します。',
-	'autocreatecategorypages-createdby' => '拡張機能 AutoCreateCategoryPages によって自動的に作成',
+	'autocreatecategorypages-desc' => '未作成のカテゴリ ページを、保存時に自動作成する',
+	'autocreatecategorypages-stub' => 'これはカテゴリ ページです。
+カテゴリ「$1」に属するページをすべて列挙します。カテゴリ「$1」に下位カテゴリがある場合はそれもすべて列挙します。',
+	'autocreatecategorypages-createdby' => 'AutoCreateCategoryPages 拡張機能により自動作成',
 	'autocreatecategorypages-editor' => '自動カテゴリ作成係',
 );
 
