@@ -71,7 +71,7 @@ Llista toles páxines de la categoría «$1» igual que toles sub-categoríes de
 	'autocreatecategorypages-editor' => 'Creador automáticu de categoríes',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -423,7 +423,7 @@ Ia menyenaraikan semua laman dalam kategori "$1" dan juga subkategori dalam kate
 	'autocreatecategorypages-editor' => 'Pembuka kategori automatik',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -445,7 +445,7 @@ Hier vindt u de pagina\'s in de categorie "$1" als ook alle bestaande ondercateg
 	'autocreatecategorypages-editor' => 'Automatische categoriemaker',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -589,7 +589,7 @@ Tukaj so navedene vse strani v kategoriji »$1«, kakor tudi vse podkategorije k
 	'autocreatecategorypages-editor' => 'Samodejni ustvarjalec kategorij',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -597,7 +597,7 @@ $messages['sr-ec'] = array(
 	'autocreatecategorypages-editor' => 'Аутоматско прављење категорија',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -718,7 +718,7 @@ Lisedon padis valik in klad: „$1“, äsi donakladis valik klada: „$1“ if 
 	'autocreatecategorypages-editor' => 'Kladijafan itjäfidik',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Dimension
  * @author Wilsonmess
  * @author Yfdyh000
