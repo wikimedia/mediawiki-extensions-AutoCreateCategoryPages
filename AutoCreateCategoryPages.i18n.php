@@ -246,6 +246,17 @@ $messages['frp'] = array(
 	'autocreatecategorypages-editor' => 'Crèator ôtomatico de catègorie',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'autocreatecategorypages-desc' => "Ferjiden kategoriisidjen bi't seekrin automaatisk iinracht",
+	'autocreatecategorypages-stub' => 'Det as en kategoriisidj.
+Hat wiset aal a sidjen uun det kategorii „$1“ an uk onerkategoriin faan „$1“, wan diar do högen san.',
+	'autocreatecategorypages-createdby' => 'Automaatisk faan det ütjwidjang AutoCreateCategoryPages iinracht.',
+	'autocreatecategorypages-editor' => 'Automaatisk kategorii-iinrachten',
+);
+
 /** Irish (Gaeilge)
  * @author Alison
  */
@@ -739,4 +750,3 @@ $messages['zh-hant'] = array(
 	'autocreatecategorypages-createdby' => '自動建立由 自動建立分類頁面 擴充套件。',
 	'autocreatecategorypages-editor' => '自動分類生成器',
 );
-
