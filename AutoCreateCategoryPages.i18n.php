@@ -742,9 +742,11 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Liflon
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
+	'autocreatecategorypages-desc' => '儲存時自動創建缺少的分類頁面',
 	'autocreatecategorypages-stub' => '這是一個分類頁面。
 它列出了分類"$1"及其所有子分類中的全部頁面。',
 	'autocreatecategorypages-createdby' => '自動建立由 自動建立分類頁面 擴充套件。',
