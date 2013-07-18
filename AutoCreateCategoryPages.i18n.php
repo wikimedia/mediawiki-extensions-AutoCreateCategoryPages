@@ -213,6 +213,13 @@ $messages['eu'] = array(
 	'autocreatecategorypages-editor' => 'Kategoria sortzaile automatikoa',
 );
 
+/** Persian (فارسی)
+ * @author Alireza
+ */
+$messages['fa'] = array(
+	'autocreatecategorypages-editor' => 'رده‌ساز خودکار',
+);
+
 /** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
