@@ -407,6 +407,13 @@ Et stinn all d\'Säiten aus der Kategorie "$1" drop genee wéi all Ënnerkategor
 	'autocreatecategorypages-editor' => 'Kategorien automatesch maachen',
 );
 
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'autocreatecategorypages-editor' => 'Automatinis kategorijų kūrėjas',
+);
+
 /** Lushai (Mizo ţawng)
  * @author RMizo
  */
