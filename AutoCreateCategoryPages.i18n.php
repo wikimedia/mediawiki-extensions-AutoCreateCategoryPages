@@ -437,6 +437,15 @@ $messages['mk'] = array(
 	'autocreatecategorypages-editor' => 'Автоматски создавач на категории',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'autocreatecategorypages-stub' => 'हे वर्गपान आहे.
+ते वर्ग "$1" मधिल सर्व पानांची यादी, तसेच,"$1" वर्गाचे जर असतील तर उपवर्गही दाखविते.',
+	'autocreatecategorypages-editor' => 'स्वयंचलित वर्ग निर्माता',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
