@@ -385,6 +385,13 @@ $messages['km'] = array(
 	'autocreatecategorypages-editor' => 'អ្នកបង្កើត​ចំណាត់ថ្នាក់ក្រុម​ដោយស្វ័យប្រវត្តិ',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'autocreatecategorypages-editor' => '자동 분류 생성기',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
