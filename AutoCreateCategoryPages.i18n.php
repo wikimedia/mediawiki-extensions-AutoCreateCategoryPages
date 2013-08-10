@@ -389,6 +389,10 @@ $messages['km'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
+	'autocreatecategorypages-desc' => '저장할 때 없는 분류 문서를 자동으로 만듭니다',
+	'autocreatecategorypages-stub' => '이 문서는 분류 문서입니다.
+"$1" 문서에 있는 모든 문서를 나열할 뿐만 아니라 "$1" 분류에 하위 분류가 존재하면 모두 나열합니다.',
+	'autocreatecategorypages-createdby' => 'AutoCreateCategoryPages 확장 기능이 자동으로 만들었습니다.',
 	'autocreatecategorypages-editor' => '자동 분류 생성기',
 );
 
