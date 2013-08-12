@@ -20,9 +20,10 @@ It lists all of the pages in category "$1" as well as all subcategories of categ
 /** Message documentation (Message documentation)
  * @author Fryed-peach
  * @author Purodha
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'autocreatecategorypages-desc' => '{{desc}}',
+	'autocreatecategorypages-desc' => '{{desc|name=Auto Create Category Pages|url=http://www.mediawiki.org/wiki/Extension:Uniwiki_Auto_Create_Category_Pages}}',
 );
 
 /** Gheg Albanian (Gegë)
