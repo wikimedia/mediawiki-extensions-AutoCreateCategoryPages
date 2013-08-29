@@ -78,6 +78,17 @@ Llista toles páxines de la categoría «$1» igual que toles sub-categoríes de
 	'autocreatecategorypages-editor' => 'Creador automáticu de categoríes',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'autocreatecategorypages-desc' => 'Awtomatikong muknaon an nawawarang kategoriya nin mga pahina sa pagtatagama',
+	'autocreatecategorypages-stub' => 'Ini sarong kategoriya nin pahina.
+Ini minalista sa gabos na mga pahina na yaon sa katergoriya na "$1" siring man sa gabos na mga sub-kateroriya nin kategoriya na "$1" kun arinman an eksistido na.',
+	'autocreatecategorypages-createdby' => 'Awtomatikong pinagmukna kan ekstensyon nin AutoCreateCategoryPages.',
+	'autocreatecategorypages-editor' => 'Awtomatikong kagmukna nin kategoriya',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
