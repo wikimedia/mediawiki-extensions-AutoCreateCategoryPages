@@ -443,7 +443,7 @@ $messages['lt'] = array(
 	'autocreatecategorypages-editor' => 'Automatinis kategorijų kūrėjas',
 );
 
-/** Lushai (Mizo ţawng)
+/** Mizo (Mizo ţawng)
  * @author RMizo
  */
 $messages['lus'] = array(
@@ -486,7 +486,7 @@ Ia menyenaraikan semua laman dalam kategori "$1" dan juga subkategori dalam kate
 	'autocreatecategorypages-editor' => 'Pembuka kategori automatik',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -508,7 +508,7 @@ Hier vindt u de pagina\'s in de categorie "$1" als ook alle bestaande ondercateg
 	'autocreatecategorypages-editor' => 'Automatische categoriemaker',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  */
