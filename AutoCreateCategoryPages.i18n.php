@@ -470,8 +470,10 @@ $messages['mk'] = array(
  * @author V.narsikar
  */
 $messages['mr'] = array(
+	'autocreatecategorypages-desc' => 'जतन केल्यावर स्वयंचलितरित्या नसलेल्या वर्गांची पाने तयार करा',
 	'autocreatecategorypages-stub' => 'हे वर्गपान आहे.
 ते वर्ग "$1" मधिल सर्व पानांची यादी, तसेच,"$1" वर्गाचे जर असतील तर उपवर्गही दाखविते.',
+	'autocreatecategorypages-createdby' => 'स्वयंनिर्माणवर्गपाने विस्तारकाद्वारे स्वयंचलितरित्या निर्मित',
 	'autocreatecategorypages-editor' => 'स्वयंचलित वर्ग निर्माता',
 );
 
