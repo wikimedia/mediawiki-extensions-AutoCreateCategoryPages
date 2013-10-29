@@ -1,65 +1,58 @@
 <?php
 
 class UniwikiAutoCreateCategoryPages {
-	public function UW_AutoCreateCategoryPages_Save ( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis, &$sectionanchor, &$flags, $revision ) {
-		global $wgDBprefix;
+		/**
+	 * Get an array of existing categories, with the name in the key and sort key in the value.
+	 *
+	 * @return array
+	 */
+	private function getExistingCategories() {
+		// TODO: cache this. Probably have to add to said cache every time a category page is created, by us or manually
+		$dbr = wfGetDB ( DB_SLAVE );
+		$res = $dbr->select( 'page', 'page_title', array( 'page_namespace' => NS_CATEGORY ) );
+		
+		$categories = array();
+		foreach( $res as $row ) {
+			$categories[] = $row->page_title;
+		}
+		
+		return $categories;
+	}
 
-		/* after the page is saved, get all the categories
-		 * and see if they exists as "proper" pages; if not
-		 * then create a simple page for them automatically */
+	/* after the page is saved, get all the categories
+	 * and see if they exist as "proper" pages; if not,
+	 * create a simple page for them automatically 
+	 */	
+	public function UW_AutoCreateCategoryPages_Save ( &$article, &$user, $text, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, $revision, &$status, $baseRevId ) {
+		global $wgDBprefix, $wgAutoCreateCategoryStub;
 
 		// Extract the categories on this page
-		//
-		// FIXME: this obviously only works for the English namespaces
-		//
-		$category = wfMsg("nstab-category");
-		$regex = "/\[\[{$category}:(.+?)(?:\|.*)?\]\]/i";
-		preg_match_all ( $regex, $text, $matches );
+		//$article->getParserOptions();
+		$page_cats = $article->getParserOutput( $article->makeParserOptions( $user ) )->getCategories();
+		$page_cats = array_keys( $page_cats );	// Because we get a lame array back
+		$existing_cats = $this->getExistingCategories();
+		
+		// Determine which categories on page do not exist
+		$new_cats = array_diff( $page_cats, $existing_cats );
+		
+		if( count( $new_cats ) > 0 ) {
+			// Create a user object for the editing user and add it to the database
+			// if it is not there already
+			$editor = User::newFromName( wfMessage( 'autocreatecategorypages-editor' )->inContentLanguage()->text() );
+			if ( !$editor->isLoggedIn() ) {
+				$editor->addToDatabase();
+			}
+			
+			$summary = wfMessage( 'autocreatecategorypages-createdby' )->inContentLanguage()->text();
 
-		// array of the categories on the page (in db form)
-		$on_page = array();
-		foreach ( $matches[1] as $cat )
-			$on_page[] = Title::newFromText ( $cat )->getDBkey();
+			foreach( $new_cats as $cat ) {
+				$catTitle = Title::newFromDBkey ( $cat )->getText();
+				$stub = ( $wgAutoCreateCategoryStub != null ) ? 
+						$wgAutoCreateCategoryStub : wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
 
-		$regex = "/\[\[category:(.+?)(?:\|.*)?\]\]/i";
-		preg_match_all ( $regex, $text, $matches );
-
-		foreach ( $matches[1] as $cat )
-			$on_page[] = Title::newFromText ( $cat )->getDBkey();
-
-		// array of the categories in the db
-		$db = wfGetDB ( DB_MASTER );
-		$results = $db->resultObject ( $db->query(
-			"select distinct page_title from {$wgDBprefix}page " .
-			"where page_namespace = '" . NS_CATEGORY . "'" )
-		);
-
-		$in_db = array();
-		while ( $r = $results->next() )
-			$in_db[] = $r->page_title;
-
-		/* loop through the categories in the page and
-		* see if they already exist as a category page */
-		foreach ( $on_page as $db_key ) {
-			if ( !in_array( $db_key, $in_db ) ) {
-
-				
-
-				// Create a user object for the editing user and add it to the database
-				// if it is not there already
-				$editor = User::newFromName( wfMsgForContent( 'autocreatecategorypages-editor' ) );
-				if ( !$editor->isLoggedIn() ) {
-					$editor->addToDatabase();
-				}
-
-				// if it does not exist, then create it here
-				$page_title = Title::newFromDBkey ( $db_key )->getText();
-				$stub = wfMsgForContent ( 'autocreatecategorypages-stub', $page_title );
-				$summary = wfMsgForContent ( 'autocreatecategorypages-createdby' );
-				$article = new Article ( Title::newFromDBkey( "Category:$db_key" ) );
-
+				$catPage = new Article( Title::makeTitleSafe( NS_CATEGORY, $cat ) );
 				try {
-					$article->doEdit ( $stub, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
+					$catPage->doEdit ( $stub, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
 
 				} catch ( MWException $e ) {
 					/* fail silently...

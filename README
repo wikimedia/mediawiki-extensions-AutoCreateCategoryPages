@@ -1,0 +1,38 @@
+= Auto Create Category Pages =
+Auto Create Category Page 
+(https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Page)
+(what a mouthful!) is a MediaWiki extension which automatically creates
+stub pages for non-existent categories as soon as they are linked to,
+avoiding the confusing default behavior of "There is currently no text in
+this page..." or redirecting to the edit page.
+
+
+== Compatibility ==
+Tested with MediaWiki 1.21.x and MediaWiki 1.22alpha.
+
+== Installation ==
+See INSTALL file for configuration options.
+
+=== Caveats ===
+This extension is currently not recommended for use on large wikis, as it
+doesn't implement any caching of its database queries (for retrieving
+the list of existing category pages).
+
+== Credits ==
+<em>Auto Create Category Pages</em> was originally created as
+"Uniwiki Auto Create Category Pages" by Merrick Schaefer, Mark Johnston,
+Evan Wheeler & Adam Mckaig, as part of the Uniwiki project for UNICEF
+(see [https://www.mediawiki.org/wiki/Category:Uniwiki Category:Uniwiki]).
+
+
+As Uniwiki extensions for MediaWiki are not maintained by the original
+developers anymore, according to an e-mail by Mark Johnston from Nov 9, 2012,
+the maintenance of this one extension was taken up by 
+[https://www.mediawiki.org/wiki/User:FreedomFighterSparrow Dror S.]
+
+== License ==
+The extension was released under GPLv3. See LICENSE file for more details.
+
+== Short changelog ==
+* Version 0.1, 01-Aug-2008: original release.
+* Version 0.2, 28-Oct-2013: updated to work with MW 1.21.x & MW 1.22alpha.
