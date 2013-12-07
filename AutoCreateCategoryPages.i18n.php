@@ -148,7 +148,7 @@ $messages['ca'] = array(
 	'autocreatecategorypages-editor' => 'Creador automàtic de categories',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
@@ -169,6 +169,13 @@ $messages['de'] = array(
 Sie listet alle Seiten in der Kategorie „$1“ sowie alle Unterkategorien der Kategorie „$1“, sofern welche vorhanden sind.',
 	'autocreatecategorypages-createdby' => 'Automatisch von der AutoCreateCategoryPages-Erweiterung erstellt.',
 	'autocreatecategorypages-editor' => 'Automatische Kategorienerstellung',
+);
+
+/** Zazaki (Zazaki)
+ * @author Marmase
+ */
+$messages['diq'] = array(
+	'autocreatecategorypages-editor' => 'Otomatik kategori vırazoğ',
 );
 
 /** Lower Sorbian (dolnoserbski)
