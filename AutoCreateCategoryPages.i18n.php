@@ -140,11 +140,15 @@ Ona prikazuje sve stranice u kategoriji "$1" kao i sve podkategorije unutar kate
 );
 
 /** Catalan (català)
+ * @author Alvaro Vidal-Abarca
  * @author Paucabot
  * @author Solde
  */
 $messages['ca'] = array(
 	'autocreatecategorypages-desc' => 'Crea les pàgines de les categories demanades automàticament en desar.',
+	'autocreatecategorypages-stub' => 'Aquesta és una pàgina de categorització.
+Llista totes les pàgines de la categoria "$1", així com les subcategories de la categoria "$1", si n\'hi ha.',
+	'autocreatecategorypages-createdby' => "Creada automàticament per l'extensió AutoCreateCategoryPages.",
 	'autocreatecategorypages-editor' => 'Creador automàtic de categories',
 );
 
