@@ -250,6 +250,7 @@ $messages['fa'] = array(
 	'autocreatecategorypages-desc' => 'ایجاد دستهٔ از کار افتادهٔ صفحات ذخیره شده به صورت خودکار',
 	'autocreatecategorypages-stub' => 'این یک صفحهٔ دسته است.
 همهٔ صفحات در دستهٔ "$1" به خوبی همهٔ دسته‌های پیشین دستهٔ "$1" اگر هریک وجود داشته باشد، فهرست می‌کند.',
+	'autocreatecategorypages-createdby' => 'ایجاد گسترهٔ آتو‌کریت‌کتگوری‌پیجز به طور خودکار',
 	'autocreatecategorypages-editor' => 'رده‌ساز خودکار',
 );
 
