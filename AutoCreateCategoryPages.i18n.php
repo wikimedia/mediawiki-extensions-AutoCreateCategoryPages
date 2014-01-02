@@ -152,6 +152,17 @@ Llista totes les pàgines de la categoria "$1", així com les subcategories de l
 	'autocreatecategorypages-editor' => 'Creador automàtic de categories',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'autocreatecategorypages-desc' => 'Ӏалаш йича автоматически йоцу категореш кхуллу',
+	'autocreatecategorypages-stub' => 'ХӀара агӀо категорийн ю.
+Цуна чохь билгалйина хӀокху «$1» категори чура массо агӀонаш, кхин массо бухара категореш а «$1» категорин чура, уьш йолуш елахь.',
+	'autocreatecategorypages-createdby' => 'AutoCreateCategoryPages гӀоьнца автоматически кхоьллина.',
+	'autocreatecategorypages-editor' => 'Автоматически категори кхоьллина',
+);
+
 /** Czech (čeština)
  * @author Matěj Grabovský
  */
