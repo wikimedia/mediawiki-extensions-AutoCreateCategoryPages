@@ -188,9 +188,10 @@ Sie listet alle Seiten in der Kategorie „$1“ sowie alle Unterkategorien der 
 
 /** Zazaki (Zazaki)
  * @author Marmase
+ * @author Mirzali
  */
 $messages['diq'] = array(
-	'autocreatecategorypages-editor' => 'Otomatik kategori vırazoğ',
+	'autocreatecategorypages-editor' => 'Kategoriye vıraştoğo otomatik',
 );
 
 /** Lower Sorbian (dolnoserbski)
