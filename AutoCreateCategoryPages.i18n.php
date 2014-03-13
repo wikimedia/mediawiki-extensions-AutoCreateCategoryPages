@@ -730,12 +730,14 @@ $messages['ta'] = array(
 
 /** Telugu (తెలుగు)
  * @author Chaduvari
+ * @author Ravichandra
  * @author Veeven
  */
 $messages['te'] = array(
 	'autocreatecategorypages-desc' => 'భద్రపరిచేటప్పుడు తప్పిపోయిన వర్గపు పేజీలను ఆటోమాటిగ్గా సృష్టించు',
 	'autocreatecategorypages-stub' => 'ఇది వర్గపు పేజీ.
 "$1" వర్గంలోని అన్ని పేజీలను మరియు ఏవైనా ఉపవర్గాలని ఈ పేజీ చూపిస్తుంది.',
+	'autocreatecategorypages-editor' => 'యాంత్రికంగా వర్గాలు సృష్టించేది',
 );
 
 /** Turkmen (Türkmençe)
