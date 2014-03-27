@@ -815,6 +815,14 @@ Lisedon padis valik in klad: „$1“, äsi donakladis valik klada: „$1“ if 
 	'autocreatecategorypages-editor' => 'Kladijafan itjäfidik',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'autocreatecategorypages-stub' => 'דאס איז א קאטעגאריע בלאט.
+ער רעכנט אויס אלע בלעטער אין קאטעגאריע "$1" ווי אויך אלע אונטערקאטעגאריעס פון קאטעגאריע "$1" וואז זענען פֿאראן.',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Dimension
  * @author Qiyue2001
