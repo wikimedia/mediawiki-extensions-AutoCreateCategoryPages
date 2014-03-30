@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bdamokos",
+            "Glanthor Reviol"
+        ]
+    },
+    "autocreatecategorypages-desc": "Hiányzó kategóriaoldalak automatikus létrehozása a mentés után.",
+    "autocreatecategorypages-stub": "Ez egy kategórialap.\nListázza a(z) „$1” kategóriában található összes lapot, valamint a(z) „$1” kategória alkategóriát (ha vannak).",
+    "autocreatecategorypages-createdby": "Automatikusan készítette az AutoCreateCategoryPages kiterjesztés.",
+    "autocreatecategorypages-editor": "Automatikus kategória-készítő"
+}

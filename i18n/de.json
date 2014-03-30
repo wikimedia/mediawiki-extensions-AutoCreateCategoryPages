@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Als-Holder",
+            "Melancholie"
+        ]
+    },
+    "autocreatecategorypages-desc": "Lege fehlende Kategorienseiten beim Speichern automatisch an",
+    "autocreatecategorypages-stub": "Dies ist eine Kategorieseite.\nSie listet alle Seiten in der Kategorie „$1“ sowie alle Unterkategorien der Kategorie „$1“, sofern welche vorhanden sind.",
+    "autocreatecategorypages-createdby": "Automatisch von der AutoCreateCategoryPages-Erweiterung erstellt.",
+    "autocreatecategorypages-editor": "Automatische Kategorienerstellung"
+}

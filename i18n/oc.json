@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "autocreatecategorypages-desc": "Crear automaticament las paginas de categorias mancantas al moment del salvament",
+    "autocreatecategorypages-stub": "Aquò es una pagina de categorias.\nLista totas las paginas eissidas de la categoria « $1 » e, se fa mestièr, tanben totas sas soscategorias.",
+    "autocreatecategorypages-createdby": "Creada automaticament per l’extension AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Creator automatic de categoria."
+}

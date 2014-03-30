@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aleksandrit",
+            "Александр Сигачёв"
+        ]
+    },
+    "autocreatecategorypages-desc": "Создаёт отсутствующие категории автоматически при сохранении",
+    "autocreatecategorypages-stub": "Это страница категории.\nНа ней перечислены все страницы из категории «$1», а также все подкатегории категории «$1», если они существуют.",
+    "autocreatecategorypages-createdby": "Создана автоматически с помощью расширения AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Автоматический создатель категорий"
+}

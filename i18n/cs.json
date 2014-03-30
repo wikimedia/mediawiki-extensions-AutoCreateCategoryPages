@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matěj Grabovský"
+        ]
+    },
+    "autocreatecategorypages-desc": "Při ukládání automaticky vytváří chybějící stránky kategorií",
+    "autocreatecategorypages-stub": "Toto je stránka kategorie.\nObsahuje všechny stránky v kategorii „$1“ a také všechny podkategorie kategorie „$1“ pokud nějaké existují.",
+    "autocreatecategorypages-createdby": "Automaticky vytvořené rozšířením AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Automatická tvorba kategorií"
+}

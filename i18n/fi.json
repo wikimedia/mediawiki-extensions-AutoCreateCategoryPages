@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cimon Avaro",
+            "Crt"
+        ]
+    },
+    "autocreatecategorypages-desc": "Luo puuttuvat luokkasivut automaattisesti tallennettaessa",
+    "autocreatecategorypages-stub": "Tämä on luokkasivu.\nSillä luetellaan kaikki sivut luokassa ”$1”, sekä kaikki luokkaan ”$1” kuuluvat alaluokat, jos niitä on.",
+    "autocreatecategorypages-createdby": "AutoCreateCategoryPages-laajennuksen automaattisesti luoma.",
+    "autocreatecategorypages-editor": "Automaattinen luokan perustaja"
+}

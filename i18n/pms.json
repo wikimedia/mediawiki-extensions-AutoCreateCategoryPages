@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Dragonòt"
+        ]
+    },
+    "autocreatecategorypages-desc": "Crea le pàgine dle categorìe mancante automaticament quand ch'as salva",
+    "autocreatecategorypages-stub": "Sta-sì a l'é na pàgina ëd categorìa.\nA lista tute le pàgine ant la categorìa \"$1\" com tute le sotcategorìe dla categorìa \"$1\" se a esisto.",
+    "autocreatecategorypages-createdby": "Creà automaticament da l'estension AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Creator automàtich ëd categorìa"
+}

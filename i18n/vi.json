@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Minh Nguyen",
+            "Vinhtantran"
+        ]
+    },
+    "autocreatecategorypages-desc": "Tự động tạo ra trang thể loại còn thiếu khi lưu trang",
+    "autocreatecategorypages-stub": "Đây là một trang thể loại.\nNó liệt kê tất cả các trang trong thể loại “$1” cũng như tất cả các thể loại con của thể loại “$1” nếu có.",
+    "autocreatecategorypages-createdby": "Được phần mở rộng AutoCreateCategoryPages tự động tạo ra.",
+    "autocreatecategorypages-editor": "Bộ tự động tạo thể loại"
+}

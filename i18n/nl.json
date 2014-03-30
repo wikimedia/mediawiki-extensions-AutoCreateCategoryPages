@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "autocreatecategorypages-desc": "Automatisch categoriepagina's aanmaken bij opslaan",
+    "autocreatecategorypages-stub": "Dit is een categoriepagina.\nHier vindt u de pagina's in de categorie \"$1\" als ook alle bestaande ondercategorieën van de categorie \"$1\".",
+    "autocreatecategorypages-createdby": "Automatisch aangemaakt door de uitbreiding AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Automatische categoriemaker"
+}

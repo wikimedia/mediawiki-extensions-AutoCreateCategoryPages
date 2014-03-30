@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bennylin"
+        ]
+    },
+    "autocreatecategorypages-desc": "Buat secara otomatis saat disimpan halaman kategori yang belum dibuat",
+    "autocreatecategorypages-stub": "Ini adalah halaman kategori.\n\nHalaman ini mendaftarkan semua halaman di kategori \"$1\" dan juga semua upa kategori dari kategori \"$1\" yang ada.",
+    "autocreatecategorypages-createdby": "Dibuat secara otomatis dengan pengaya AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Pembuat kategori otomatis"
+}

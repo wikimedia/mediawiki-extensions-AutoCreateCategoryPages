@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Darth Kule"
+        ]
+    },
+    "autocreatecategorypages-desc": "Crea automaticamente le pagine di categoria mancanti al salvataggio",
+    "autocreatecategorypages-stub": "Questa è una pagina di categoria.\nDi seguito sono elencate tutte le pagine nella categoria \"$1\" e tutte le sottocategorie di \"$1\" qualora esistano.",
+    "autocreatecategorypages-createdby": "Creata automaticamente dall'estensione AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Creatore automatico di categoria"
+}

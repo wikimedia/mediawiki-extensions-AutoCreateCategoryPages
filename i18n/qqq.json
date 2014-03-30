@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fryed-peach",
+            "Purodha",
+            "Shirayuki"
+        ]
+    },
+    "autocreatecategorypages-desc": "{{desc|name=Auto Create Category Pages|url=http://www.mediawiki.org/wiki/Extension:Uniwiki_Auto_Create_Category_Pages}}",
+    "autocreatecategorypages-stub": "Used as stub when creating a category page. Parameters:\n* $1 - page title",
+    "autocreatecategorypages-createdby": "Used as \"edit summary\" when creating a category page.",
+    "autocreatecategorypages-editor": "Used as username when creating a category page automatically.\n\nIf the user does not exist, it will be created automatically."
+}

@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rotemliss",
+            "YaronSh"
+        ]
+    },
+    "autocreatecategorypages-desc": "יצירת דפי קטגוריות חסרים אוטומטית עם השמירה",
+    "autocreatecategorypages-stub": "זהו דף קטגוריה.\nכאן מופיעים כל הדפים בקטגוריה \"$1\", כמו גם כל קטגוריות המשנה של הקטגוריה \"$1\", אם קיימות.",
+    "autocreatecategorypages-createdby": "נוצר אוטומטית על ידי ההרחבה AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "יוצר הקטגוריות האוטומטי"
+}

@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Yekrats"
+        ]
+    },
+    "autocreatecategorypages-desc": "Krei bezonitajn kategoriajn paĝojn aŭtomate dum konservado",
+    "autocreatecategorypages-stub": "Jen kategoria paĝo.\nĜi montras kaj ĉiujn paĝojn en kategorio \"$1\" kaj ĉiuj subkategorioj de kategorio \"$1\" se ioj ajn ekzistas.",
+    "autocreatecategorypages-createdby": "Kreita aŭtomate per la AutoCreateCategoryPages etendaĵo.",
+    "autocreatecategorypages-editor": "Aŭtomata kreilo de kategorioj"
+}

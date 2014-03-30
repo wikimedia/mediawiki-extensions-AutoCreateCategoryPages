@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Harald Khan",
+            "Njardarlogar"
+        ]
+    },
+    "autocreatecategorypages-desc": "Opprett manglande kategorisider automatisk ved lagring",
+    "autocreatecategorypages-stub": "Dette er ei kategorisida.\nHo lista opp alle sidene i kategorien «$1» i tillegg til eventuelle underkategoriar av «$» om dei finst.",
+    "autocreatecategorypages-createdby": "Oppretta automatisk av AutoCreateCategoryPages-utvidinga.",
+    "autocreatecategorypages-editor": "Automatisk kategorioppretting"
+}

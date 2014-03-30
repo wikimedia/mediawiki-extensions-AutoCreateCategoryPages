@@ -13,7 +13,7 @@ if ( !defined( 'MEDIAWIKI' ) )
 $wgExtensionCredits['other'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'AutoCreateCategoryPages',
-	'version'        => '0.2',
+	'version'        => '0.3.0',
 	'author'         => array ( 'Merrick Schaefer', 'Mark Johnston', 'Evan Wheeler', 'Adam Mckaig (UNICEF)', 'Dror S. ([http://www.kolzchut.org.il All-Rights])' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Pages',
 	'descriptionmsg' => 'autocreatecategorypages-desc',
@@ -21,6 +21,7 @@ $wgExtensionCredits['other'][] = array(
 
 $wgAutoCreateCategoryStub = null;	// Can be used to override the stub message.
 
+$wgMessagesDirs['AutoCreateCategoryPages'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['AutoCreateCategoryPages'] = dirname( __FILE__ ) . '/AutoCreateCategoryPages.i18n.php';
 $wgAutoloadClasses['UniwikiAutoCreateCategoryPages'] = dirname(__FILE__) . '/AutoCreateCategoryPages.body.php';
 

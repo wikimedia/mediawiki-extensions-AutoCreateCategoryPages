@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Leinad"
+        ]
+    },
+    "autocreatecategorypages-desc": "Automatyczne tworzenie brakujących kategorii podczas zapisu",
+    "autocreatecategorypages-stub": "To jest strona kategorii. \nGromadzi ona wszystkie strony, którym przypisana jest kategoria „$1”, a także podkategorie kategorii „$1”, o ile jakaś istnieje.",
+    "autocreatecategorypages-createdby": "Utworzona automatycznie przez rozszerzenie AutoCreateCategoryPages.",
+    "autocreatecategorypages-editor": "Automatyczne tworzenie kategorii"
+}
