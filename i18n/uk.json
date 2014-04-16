@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aleksandrit"
-        ]
-    },
-    "autocreatecategorypages-desc": "Створює всі категорії автоматично при збереженні",
-    "autocreatecategorypages-stub": "Це сторінка категорії. \nНа ній перераховані всі сторінки з категорії «$1», а також всі підкатегорії категорії «$1», якщо вони існують.",
-    "autocreatecategorypages-createdby": "Створена автоматично за допомогою розширення AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Автоматичний творець категорій"
+	"@metadata": {
+		"authors": [
+			"Aleksandrit"
+		]
+	},
+	"autocreatecategorypages-desc": "Створює всі категорії автоматично при збереженні",
+	"autocreatecategorypages-stub": "Це сторінка категорії. \nНа ній перераховані всі сторінки з категорії «$1», а також всі підкатегорії категорії «$1», якщо вони існують.",
+	"autocreatecategorypages-createdby": "Створена автоматично за допомогою розширення AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Автоматичний творець категорій"
 }

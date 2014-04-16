@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Malafaya",
-            "Waldir"
-        ]
-    },
-    "autocreatecategorypages-desc": "Criar automaticamente páginas de categorias em falta ao gravar",
-    "autocreatecategorypages-stub": "Esta é uma página de categoria.\nLista todas as páginas na categoria \"$1\" bem como todas as subcategorias da categoria \"$1\" se existirem.",
-    "autocreatecategorypages-createdby": "Criada automaticamente pela extensão AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Gerador automático de categorias"
+	"@metadata": {
+		"authors": [
+			"Malafaya",
+			"Waldir"
+		]
+	},
+	"autocreatecategorypages-desc": "Criar automaticamente páginas de categorias em falta ao gravar",
+	"autocreatecategorypages-stub": "Esta é uma página de categoria.\nLista todas as páginas na categoria \"$1\" bem como todas as subcategorias da categoria \"$1\" se existirem.",
+	"autocreatecategorypages-createdby": "Criada automaticamente pela extensão AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Gerador automático de categorias"
 }

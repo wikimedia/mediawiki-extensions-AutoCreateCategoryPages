@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "autocreatecategorypages-desc": "Crea automáticamente les páxines de categoría que falten al guardar",
-    "autocreatecategorypages-stub": "Esta ye una páxina de categoría.\nLlista toles páxines de la categoría «$1» igual que toles sub-categoríes de la categoría «$1» si esistieren.",
-    "autocreatecategorypages-createdby": "Creada automáticamente pola estensión AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Creador automáticu de categoríes"
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"autocreatecategorypages-desc": "Crea automáticamente les páxines de categoría que falten al guardar",
+	"autocreatecategorypages-stub": "Esta ye una páxina de categoría.\nLlista toles páxines de la categoría «$1» igual que toles sub-categoríes de la categoría «$1» si esistieren.",
+	"autocreatecategorypages-createdby": "Creada automáticamente pola estensión AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Creador automáticu de categoríes"
 }

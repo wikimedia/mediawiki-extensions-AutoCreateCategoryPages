@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "autocreatecategorypages-desc": "Crea automaticamente as páxinas de categorías que faltan",
-    "autocreatecategorypages-stub": "Esta é unha páxina de categoría.\nLista todas as páxinas na categoría \"$1\" así como todas as súas subcategorías, se existisen.",
-    "autocreatecategorypages-createdby": "Creada automaticamente pola extensión AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Creador automático de categorías"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"autocreatecategorypages-desc": "Crea automaticamente as páxinas de categorías que faltan",
+	"autocreatecategorypages-stub": "Esta é unha páxina de categoría.\nLista todas as páxinas na categoría \"$1\" así como todas as súas subcategorías, se existisen.",
+	"autocreatecategorypages-createdby": "Creada automaticamente pola extensión AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Creador automático de categorías"
 }

@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Murma174"
-        ]
-    },
-    "autocreatecategorypages-desc": "Ferjiden kategoriisidjen bi't seekrin automaatisk iinracht",
-    "autocreatecategorypages-stub": "Det as en kategoriisidj.\nHat wiset aal a sidjen uun det kategorii „$1“ an uk onerkategoriin faan „$1“, wan diar do högen san.",
-    "autocreatecategorypages-createdby": "Automaatisk faan det ütjwidjang AutoCreateCategoryPages iinracht.",
-    "autocreatecategorypages-editor": "Automaatisk kategorii-iinrachten"
+	"@metadata": {
+		"authors": [
+			"Murma174"
+		]
+	},
+	"autocreatecategorypages-desc": "Ferjiden kategoriisidjen bi't seekrin automaatisk iinracht",
+	"autocreatecategorypages-stub": "Det as en kategoriisidj.\nHat wiset aal a sidjen uun det kategorii „$1“ an uk onerkategoriin faan „$1“, wan diar do högen san.",
+	"autocreatecategorypages-createdby": "Automaatisk faan det ütjwidjang AutoCreateCategoryPages iinracht.",
+	"autocreatecategorypages-editor": "Automaatisk kategorii-iinrachten"
 }

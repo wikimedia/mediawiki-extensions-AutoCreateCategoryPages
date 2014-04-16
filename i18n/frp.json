@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "autocreatecategorypages-desc": "Fât ôtomaticament les pâges de catègorie manquentes pendent l’encartâjo.",
-    "autocreatecategorypages-createdby": "Fêta ôtomaticament per l’èxtension AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Crèator ôtomatico de catègorie"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"autocreatecategorypages-desc": "Fât ôtomaticament les pâges de catègorie manquentes pendent l’encartâjo.",
+	"autocreatecategorypages-createdby": "Fêta ôtomaticament per l’èxtension AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Crèator ôtomatico de catègorie"
 }

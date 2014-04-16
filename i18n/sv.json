@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Najami",
-            "Rotsee"
-        ]
-    },
-    "autocreatecategorypages-desc": "Skapa automatiskt kategorisidor som inte finns när sidan sparas",
-    "autocreatecategorypages-stub": "Detta är en kategorisida.\nHär listas alla artiklar som placerats i kategorin \"$1\", samt eventuella underkategorier till \"$1\".",
-    "autocreatecategorypages-createdby": "Sidan skapades automatiskt av AutoCreateCategoryPages-tillägget.",
-    "autocreatecategorypages-editor": "Automatisk kategoriskapning"
+	"@metadata": {
+		"authors": [
+			"Najami",
+			"Rotsee"
+		]
+	},
+	"autocreatecategorypages-desc": "Skapa automatiskt kategorisidor som inte finns när sidan sparas",
+	"autocreatecategorypages-stub": "Detta är en kategorisida.\nHär listas alla artiklar som placerats i kategorin \"$1\", samt eventuella underkategorier till \"$1\".",
+	"autocreatecategorypages-createdby": "Sidan skapades automatiskt av AutoCreateCategoryPages-tillägget.",
+	"autocreatecategorypages-editor": "Automatisk kategoriskapning"
 }

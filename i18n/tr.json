@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Karduelis",
-            "Vito Genovese"
-        ]
-    },
-    "autocreatecategorypages-desc": "Kaydedince otomatik olarak eksik kategori sayfalarını oluşturur",
-    "autocreatecategorypages-stub": "Bu bir kategori sayfasıdır.\n\"$1\" kategorisindeki sayfaların tamamının yanı sıra, varsa \"$1\" kategorisinin tüm alt kategorilerini de listelemektedir.",
-    "autocreatecategorypages-createdby": "Otomatik olarak AutoCreateCategoryPages eklentisi tarafından oluşturulmuştur.",
-    "autocreatecategorypages-editor": "Otomatik kategori oluşturucusu"
+	"@metadata": {
+		"authors": [
+			"Karduelis",
+			"Vito Genovese"
+		]
+	},
+	"autocreatecategorypages-desc": "Kaydedince otomatik olarak eksik kategori sayfalarını oluşturur",
+	"autocreatecategorypages-stub": "Bu bir kategori sayfasıdır.\n\"$1\" kategorisindeki sayfaların tamamının yanı sıra, varsa \"$1\" kategorisinin tüm alt kategorilerini de listelemektedir.",
+	"autocreatecategorypages-createdby": "Otomatik olarak AutoCreateCategoryPages eklentisi tarafından oluşturulmuştur.",
+	"autocreatecategorypages-editor": "Otomatik kategori oluşturucusu"
 }

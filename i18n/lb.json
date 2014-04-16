@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Robby"
-        ]
-    },
-    "autocreatecategorypages-desc": "Kategorie-Säiten déi feelen automatesch beim Späichere vun der Säit maachen",
-    "autocreatecategorypages-stub": "Dëst ass eng Kategorie-Säit.\nEt stinn all d'Säiten aus der Kategorie \"$1\" drop genee wéi all Ënnerkategorie vun der Kategorie \"$1\", wann et der gëtt.",
-    "autocreatecategorypages-createdby": "Automatesch vun der AutoCreateCategoryPages gemaach",
-    "autocreatecategorypages-editor": "Kategorien automatesch maachen"
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"autocreatecategorypages-desc": "Kategorie-Säiten déi feelen automatesch beim Späichere vun der Säit maachen",
+	"autocreatecategorypages-stub": "Dëst ass eng Kategorie-Säit.\nEt stinn all d'Säiten aus der Kategorie \"$1\" drop genee wéi all Ënnerkategorie vun der Kategorie \"$1\", wann et der gëtt.",
+	"autocreatecategorypages-createdby": "Automatesch vun der AutoCreateCategoryPages gemaach",
+	"autocreatecategorypages-editor": "Kategorien automatesch maachen"
 }

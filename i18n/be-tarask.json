@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "EugeneZelenko",
-            "Jim-by"
-        ]
-    },
-    "autocreatecategorypages-desc": "Стварае неіснуючыя катэгорыі аўтаматычна пад час захаваньня",
-    "autocreatecategorypages-stub": "Гэта старонка катэгорыі.\nЯна ўтрымлівае сьпіс старонак у катэгорыі «$1», а таксама падкатэгорыі «$1», калі яны існуюць.",
-    "autocreatecategorypages-createdby": "Створана аўтаматычна праз пашырэньне AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Аўтаматычнае стварэньне катэгорыяў"
+	"@metadata": {
+		"authors": [
+			"EugeneZelenko",
+			"Jim-by"
+		]
+	},
+	"autocreatecategorypages-desc": "Стварае неіснуючыя катэгорыі аўтаматычна пад час захаваньня",
+	"autocreatecategorypages-stub": "Гэта старонка катэгорыі.\nЯна ўтрымлівае сьпіс старонак у катэгорыі «$1», а таксама падкатэгорыі «$1», калі яны існуюць.",
+	"autocreatecategorypages-createdby": "Створана аўтаматычна праз пашырэньне AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Аўтаматычнае стварэньне катэгорыяў"
 }

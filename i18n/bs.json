@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "autocreatecategorypages-desc": "Pravi nedostajuću stranicu kategorije automatski pri spremanju",
-    "autocreatecategorypages-stub": "Ovo je stranica kategorije.\nOna prikazuje sve stranice u kategoriji \"$1\" kao i sve podkategorije unutar kategorije \"$1\" ukoliko postoje.",
-    "autocreatecategorypages-createdby": "Napravljeno automatski putem AutoCreateCategoryPages ekstenzije.",
-    "autocreatecategorypages-editor": "Automatski kreator kategorija"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"autocreatecategorypages-desc": "Pravi nedostajuću stranicu kategorije automatski pri spremanju",
+	"autocreatecategorypages-stub": "Ovo je stranica kategorije.\nOna prikazuje sve stranice u kategoriji \"$1\" kao i sve podkategorije unutar kategorije \"$1\" ukoliko postoje.",
+	"autocreatecategorypages-createdby": "Napravljeno automatski putem AutoCreateCategoryPages ekstenzije.",
+	"autocreatecategorypages-editor": "Automatski kreator kategorija"
 }

@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fryed-peach",
-            "Shirayuki"
-        ]
-    },
-    "autocreatecategorypages-desc": "未作成のカテゴリ ページを、保存時に自動作成する",
-    "autocreatecategorypages-stub": "これはカテゴリ ページです。\nカテゴリ「$1」に属するページをすべて列挙します。カテゴリ「$1」に下位カテゴリがある場合はそれもすべて列挙します。",
-    "autocreatecategorypages-createdby": "AutoCreateCategoryPages 拡張機能により自動作成",
-    "autocreatecategorypages-editor": "自動カテゴリ作成係"
+	"@metadata": {
+		"authors": [
+			"Fryed-peach",
+			"Shirayuki"
+		]
+	},
+	"autocreatecategorypages-desc": "未作成のカテゴリ ページを、保存時に自動作成する",
+	"autocreatecategorypages-stub": "これはカテゴリ ページです。\nカテゴリ「$1」に属するページをすべて列挙します。カテゴリ「$1」に下位カテゴリがある場合はそれもすべて列挙します。",
+	"autocreatecategorypages-createdby": "AutoCreateCategoryPages 拡張機能により自動作成",
+	"autocreatecategorypages-editor": "自動カテゴリ作成係"
 }

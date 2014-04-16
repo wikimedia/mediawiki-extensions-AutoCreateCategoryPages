@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dbc334"
-        ]
-    },
-    "autocreatecategorypages-desc": "Ustvari manjkajoče strani kategorij samodejno ob shranjevanju",
-    "autocreatecategorypages-stub": "To je stran kategorije.\nTukaj so navedene vse strani v kategoriji »$1«, kakor tudi vse podkategorije kategorije »$1«, če obstajajo.",
-    "autocreatecategorypages-createdby": "Ustvarjeno samodejno z razširitvijo AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Samodejni ustvarjalec kategorij"
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"autocreatecategorypages-desc": "Ustvari manjkajoče strani kategorij samodejno ob shranjevanju",
+	"autocreatecategorypages-stub": "To je stran kategorije.\nTukaj so navedene vse strani v kategoriji »$1«, kakor tudi vse podkategorije kategorije »$1«, če obstajajo.",
+	"autocreatecategorypages-createdby": "Ustvarjeno samodejno z razširitvijo AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Samodejni ustvarjalec kategorij"
 }

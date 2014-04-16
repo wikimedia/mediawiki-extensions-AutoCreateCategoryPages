@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Als-Holder"
-        ]
-    },
-    "autocreatecategorypages-desc": "Leg Kategoriesyte, wu fähle, automatisch bim Spychere aa",
-    "autocreatecategorypages-stub": "Des isch e Kategoriisyte.\nDo sin alli Syten ufglischtet in dr Kategorii „$1“ un alli Unterkategorie in dr Kategorie „$1“, wänn s sonigi git.",
-    "autocreatecategorypages-createdby": "Automatisch aagleit vu dr AutoCreateCategoryPages-Erwyterig.",
-    "autocreatecategorypages-editor": "Automatisches Aalege vu Kategorie"
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"autocreatecategorypages-desc": "Leg Kategoriesyte, wu fähle, automatisch bim Spychere aa",
+	"autocreatecategorypages-stub": "Des isch e Kategoriisyte.\nDo sin alli Syten ufglischtet in dr Kategorii „$1“ un alli Unterkategorie in dr Kategorie „$1“, wänn s sonigi git.",
+	"autocreatecategorypages-createdby": "Automatisch aagleit vu dr AutoCreateCategoryPages-Erwyterig.",
+	"autocreatecategorypages-editor": "Automatisches Aalege vu Kategorie"
 }

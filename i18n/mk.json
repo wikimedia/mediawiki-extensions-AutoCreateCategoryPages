@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06",
-            "Brest"
-        ]
-    },
-    "autocreatecategorypages-desc": "Со зачувувањето, автомарски создавај ги страниците кои недостасуваат во категоријата",
-    "autocreatecategorypages-stub": "Ова е категориска страница.\nГи наведува сите страници во категоријата „$1“ како и сите поткатегории на категоријата „$1“, ако постојат.",
-    "autocreatecategorypages-createdby": "Автоматски создадено од додатокот AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Автоматски создавач на категории"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Brest"
+		]
+	},
+	"autocreatecategorypages-desc": "Со зачувувањето, автомарски создавај ги страниците кои недостасуваат во категоријата",
+	"autocreatecategorypages-stub": "Ова е категориска страница.\nГи наведува сите страници во категоријата „$1“ како и сите поткатегории на категоријата „$1“, ако постојат.",
+	"autocreatecategorypages-createdby": "Автоматски создадено од додатокот AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Автоматски создавач на категории"
 }

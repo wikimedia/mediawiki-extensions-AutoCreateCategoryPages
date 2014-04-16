@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dimension",
-            "Qiyue2001",
-            "Wilsonmess",
-            "Yfdyh000",
-            "Xiaomingyan",
-            "Hudafu"
-        ]
-    },
-    "autocreatecategorypages-desc": "储存时自动创建缺少的分类页面",
-    "autocreatecategorypages-stub": "这是一个分类页面。它列出了分类“$1”及其所有子分类中的全部页面。",
-    "autocreatecategorypages-createdby": "被AutoCreateCategoryPages扩展程序自动创建。",
-    "autocreatecategorypages-editor": "自动分类生成器"
+	"@metadata": {
+		"authors": [
+			"Dimension",
+			"Qiyue2001",
+			"Wilsonmess",
+			"Yfdyh000",
+			"Xiaomingyan",
+			"Hudafu"
+		]
+	},
+	"autocreatecategorypages-desc": "储存时自动创建缺少的分类页面",
+	"autocreatecategorypages-stub": "这是一个分类页面。它列出了分类“$1”及其所有子分类中的全部页面。",
+	"autocreatecategorypages-createdby": "被AutoCreateCategoryPages扩展程序自动创建。",
+	"autocreatecategorypages-editor": "自动分类生成器"
 }

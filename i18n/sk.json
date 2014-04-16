@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Helix84"
-        ]
-    },
-    "autocreatecategorypages-desc": "Pri uložení automaticky vytvára chýbajúce stránky kategórií",
-    "autocreatecategorypages-stub": "Toto je stránka kategórie.\nObsahuje všetky stránky v kategórii „$1“ ako aj všeky podkategórie kategórie „$1“ ak nejaké existujú,",
-    "autocreatecategorypages-createdby": "Automaticky vytvorené rozšírením AutoCreateCategoryPages.",
-    "autocreatecategorypages-editor": "Autoamtická tvorba kategórií"
+	"@metadata": {
+		"authors": [
+			"Helix84"
+		]
+	},
+	"autocreatecategorypages-desc": "Pri uložení automaticky vytvára chýbajúce stránky kategórií",
+	"autocreatecategorypages-stub": "Toto je stránka kategórie.\nObsahuje všetky stránky v kategórii „$1“ ako aj všeky podkategórie kategórie „$1“ ak nejaké existujú,",
+	"autocreatecategorypages-createdby": "Automaticky vytvorené rozšírením AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Autoamtická tvorba kategórií"
 }
