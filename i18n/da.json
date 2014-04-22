@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sarrus"
+			"Sarrus",
+			"Christian List"
 		]
 	},
 	"autocreatecategorypages-desc": "Opret manglende kategorisider automatisk, når siden gemmes",
-	"autocreatecategorypages-stub": "Dette er en kategoriside.\nDen viser alle sider i kategorien \" $1 \"samt alle underkategorier af kategorien\" $1 \" hvis de findes.",
+	"autocreatecategorypages-stub": "Dette er en kategoriside.\nDen viser alle sider i kategorien \"$1\", samt eventuelle underkategorier af \"$1\".",
 	"autocreatecategorypages-createdby": "Oprettet automatisk af AutoCreateCategoryPages-udvidelsen.",
 	"autocreatecategorypages-editor": "Automatisk kategoriopretter"
 }
