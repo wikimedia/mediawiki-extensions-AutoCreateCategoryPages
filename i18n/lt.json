@@ -4,5 +4,8 @@
 			"Eitvys200"
 		]
 	},
+	"autocreatecategorypages-desc": "Sukurti trūkstamą kategorijos puslapį, automatiškai išsaugojus",
+	"autocreatecategorypages-stub": "Tai kategorijos puslapis.\nJame išvardinti visi puslapiai kategorijoje \"$1\" bei visos \"$1\" kategorijos subkategorijos, jei jos egzistuoja.",
+	"autocreatecategorypages-createdby": "Sukurta automatiškai AutoCreateCategoryPages plėtinio.",
 	"autocreatecategorypages-editor": "Automatinis kategorijų kūrėjas"
 }
