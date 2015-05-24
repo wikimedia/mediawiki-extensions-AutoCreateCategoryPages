@@ -8,7 +8,8 @@ this page..." or redirecting to the edit page.
 
 
 == Compatibility ==
-Tested with MediaWiki 1.21.x and MediaWiki 1.22alpha.
+version 1.0.0 is compatible with MediaWiki 1.25+.
+The previous version should work with MediaWiki 1.21-1.24.
 
 == Installation ==
 See INSTALL file for configuration options.
@@ -19,14 +20,14 @@ doesn't implement any caching of its database queries (for retrieving
 the list of existing category pages).
 
 == Credits ==
-<em>Auto Create Category Pages</em> was originally created as
+Auto Create Category Pages was originally created as
 "Uniwiki Auto Create Category Pages" by Merrick Schaefer, Mark Johnston,
 Evan Wheeler & Adam Mckaig, as part of the Uniwiki project for UNICEF
 (see [https://www.mediawiki.org/wiki/Category:Uniwiki Category:Uniwiki]).
 
 
 As Uniwiki extensions for MediaWiki are not maintained by the original
-developers anymore, according to an e-mail by Mark Johnston from Nov 9, 2012,
+developers anymore (according to an e-mail by Mark Johnston from Nov 9, 2012 ),
 the maintenance of this one extension was taken up by 
 [https://www.mediawiki.org/wiki/User:FreedomFighterSparrow Dror S.]
 
@@ -34,5 +35,7 @@ the maintenance of this one extension was taken up by
 The extension was released under GPLv3. See LICENSE file for more details.
 
 == Short changelog ==
-* Version 0.1, 01-Aug-2008: original release.
-* Version 0.2, 28-Oct-2013: updated to work with MW 1.21.x & MW 1.22alpha.
+* Version 1.0.0, 2015-05-24: Convert to extension registration for MW 1.25
+* Version 0.2.0, 2013-10-28: updated to work with MW 1.21.x & MW 1.22alpha.
+* Version 0.1.0, 2008-08-01: original release.
+

@@ -1,0 +1,34 @@
+{
+	"name": "AutoCreateCategoryPages",
+	"version": "1.0.0",
+	"license-name": "GPL-3.0",
+	"author": [
+		"Merrick Schaefer",
+		"Mark Johnston",
+		"Evan Wheeler",
+		"Adam Mckaig (UNICEF)",
+		"Dror S. [FFS] ([http://www.kolzchut.org.il Kol-Zchut])"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Pages",
+	"descriptionmsg": "autocreatecategorypages-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"AutoCreateCategoryPages": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"AutoCreateCategoryPages": "AutoCreateCategoryPages.body.php"
+	},
+	"Hooks": {
+		"PageContentSaveComplete": [
+			"AutoCreateCategoryPages::onPageContentSaveComplete"
+		],
+		"UserGetReservedNames": [
+			"AutoCreateCategoryPages::onUserGetReservedNames"
+		]
+	},
+	"config": {
+		"AutoCreateCategoryStub": null
+	}
+}
