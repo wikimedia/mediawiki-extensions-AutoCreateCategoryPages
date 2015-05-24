@@ -1,32 +1,13 @@
 <?php
-/**
- * @file
- * @ingroup Extensions
- * @author Merrick Schaefer, Mark Johnston, Evan Wheeler & Adam Mckaig (at UNICEF), Dror S.
- * @licence GPL 3.0
- */
-
-if ( !defined( 'MEDIAWIKI' ) )
-	die();
-
-/* ---- CREDITS ---- */
-$wgExtensionCredits['other'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'AutoCreateCategoryPages',
-	'version'        => '0.3.0',
-	'author'         => array ( 'Merrick Schaefer', 'Mark Johnston', 'Evan Wheeler', 'Adam Mckaig (UNICEF)', 'Dror S. ([http://www.kolzchut.org.il All-Rights])' ),
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Pages',
-	'descriptionmsg' => 'autocreatecategorypages-desc',
-);
-
-$wgAutoCreateCategoryStub = null;	// Can be used to override the stub message.
-
-$wgMessagesDirs['AutoCreateCategoryPages'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['AutoCreateCategoryPages'] = dirname( __FILE__ ) . '/AutoCreateCategoryPages.i18n.php';
-$wgAutoloadClasses['UniwikiAutoCreateCategoryPages'] = dirname(__FILE__) . '/AutoCreateCategoryPages.body.php';
-
-$wgAutoCreateCategoryPagesObject = new UniwikiAutoCreateCategoryPages();
-
-/* ---- HOOKS ---- */
-$wgHooks['ArticleSaveComplete'][] = array( $wgAutoCreateCategoryPagesObject, "UW_AutoCreateCategoryPages_Save");
-$wgHooks['UserGetReservedNames'][] = array( $wgAutoCreateCategoryPagesObject, 'UW_OnUserGetReservedNames');
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'AutoCreateCategoryPages' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['AutoCreateCategoryPages'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for AutoCreateCategoryPages extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the AutoCreateCategoryPages extension requires MediaWiki 1.25+' );
+}

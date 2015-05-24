@@ -1,12 +1,12 @@
 <?php
 
-class UniwikiAutoCreateCategoryPages {
+class AutoCreateCategoryPages {
 		/**
 	 * Get an array of existing categories, with the name in the key and sort key in the value.
 	 *
 	 * @return array
 	 */
-	private function getExistingCategories() {
+	static function getExistingCategories() {
 		// TODO: cache this. Probably have to add to said cache every time a category page is created, by us or manually
 		$dbr = wfGetDB ( DB_SLAVE );
 		$res = $dbr->select( 'page', 'page_title', array( 'page_namespace' => NS_CATEGORY ) );
@@ -22,15 +22,19 @@ class UniwikiAutoCreateCategoryPages {
 	/* after the page is saved, get all the categories
 	 * and see if they exist as "proper" pages; if not,
 	 * create a simple page for them automatically 
-	 */	
-	public function UW_AutoCreateCategoryPages_Save ( &$article, &$user, $text, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, $revision, &$status, $baseRevId ) {
-		global $wgDBprefix, $wgAutoCreateCategoryStub;
+	 */
+
+	public static function onPageContentSaveComplete(
+		WikiPage $article, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId
+	) {
+
+		global $wgAutoCreateCategoryStub;
 
 		// Extract the categories on this page
 		//$article->getParserOptions();
 		$page_cats = $article->getParserOutput( $article->makeParserOptions( $user ) )->getCategories();
 		$page_cats = array_keys( $page_cats );	// Because we get a lame array back
-		$existing_cats = $this->getExistingCategories();
+		$existing_cats = self::getExistingCategories();
 		
 		// Determine which categories on page do not exist
 		$new_cats = array_diff( $page_cats, $existing_cats );
@@ -50,10 +54,11 @@ class UniwikiAutoCreateCategoryPages {
 				$stub = ( $wgAutoCreateCategoryStub != null ) ? 
 						$wgAutoCreateCategoryStub : wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
 
-				$catPage = new Article( Title::makeTitleSafe( NS_CATEGORY, $cat ) );
+				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
+				$catPage = new WikiPage( $safeTitle  );
 				try {
-					$catPage->doEdit ( $stub, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
-
+					$content = ContentHandler::makeContent( $stub, $safeTitle );
+					return $catPage->doEditContent( $content, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
 				} catch ( MWException $e ) {
 					/* fail silently...
 					* todo: what can go wrong here? */
@@ -64,9 +69,9 @@ class UniwikiAutoCreateCategoryPages {
 		return true;
 	}
 
-	public function UW_OnUserGetReservedNames( &$names ) {
-		
+	public function onUserGetReservedNames( &$names ) {
 		$names[] = 'msg:autocreatecategorypages-editor';
+
 		return true;
 	}
 }
