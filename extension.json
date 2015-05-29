@@ -30,5 +30,6 @@
 	},
 	"config": {
 		"AutoCreateCategoryStub": null
-	}
+	},
+	"manifest_version": 1
 }
