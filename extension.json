@@ -12,6 +12,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Pages",
 	"descriptionmsg": "autocreatecategorypages-desc",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
 	"MessagesDirs": {
 		"AutoCreateCategoryPages": [
 			"i18n"
