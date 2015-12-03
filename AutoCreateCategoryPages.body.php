@@ -33,7 +33,9 @@ class AutoCreateCategoryPages {
 		// Extract the categories on this page
 		//$article->getParserOptions();
 		$page_cats = $article->getParserOutput( $article->makeParserOptions( $user ) )->getCategories();
-		$page_cats = array_keys( $page_cats );	// Because we get a lame array back
+		// array keys will cast numeric category names to ints
+		// so we need to cast them back to strings to avoid potentially breaking things!
+		$page_cats = array_map( 'strval', array_keys( $page_cats ) );
 		$existing_cats = self::getExistingCategories();
 		
 		// Determine which categories on page do not exist
