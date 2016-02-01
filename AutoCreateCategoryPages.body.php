@@ -60,7 +60,7 @@ class AutoCreateCategoryPages {
 				$catPage = new WikiPage( $safeTitle  );
 				try {
 					$content = ContentHandler::makeContent( $stub, $safeTitle );
-					return $catPage->doEditContent( $content, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
+					$catPage->doEditContent( $content, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
 				} catch ( MWException $e ) {
 					/* fail silently...
 					* todo: what can go wrong here? */
