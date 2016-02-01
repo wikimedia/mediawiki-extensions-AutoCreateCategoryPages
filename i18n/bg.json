@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"Vodnokon4e"
 		]
 	},
 	"autocreatecategorypages-desc": "Автоматично създава липсващите категории при съхраняване",
-	"autocreatecategorypages-stub": "Тази страница е категория.\nТя съдържа всички страници в категория „$1“ както и всички подкатегории на категорията „$1“, ако такива са налични."
+	"autocreatecategorypages-stub": "Тази страница е категория.\nТя съдържа всички страници в категория „$1“ както и всички подкатегории на категорията „$1“, ако такива са налични.",
+	"autocreatecategorypages-createdby": "Създадена автоматично с помощта на разширението AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Автоматичен създател на категории"
 }
