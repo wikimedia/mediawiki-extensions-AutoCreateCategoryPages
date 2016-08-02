@@ -71,7 +71,7 @@ class AutoCreateCategoryPages {
 		return true;
 	}
 
-	public function onUserGetReservedNames( &$names ) {
+	public static function onUserGetReservedNames( &$names ) {
 		$names[] = 'msg:autocreatecategorypages-editor';
 
 		return true;
