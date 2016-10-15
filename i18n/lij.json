@@ -4,5 +4,8 @@
 			"Giromin Cangiaxo"
 		]
 	},
-	"autocreatecategorypages-desc": "O crea aotomaticamente e pagine de categoria mancante a-o sarvataggio"
+	"autocreatecategorypages-desc": "O crea aotomaticamente e pagine de categoria mancante a-o sarvataggio",
+	"autocreatecategorypages-stub": "Questa a l'è 'na paggina de categoria.\nA l'elenca tutte e paggine inta categoria \"$1\" e tutte e sottocategorie de \"$1\" se ghe n'è.",
+	"autocreatecategorypages-createdby": "Creâ aotomaticamente da l'estenscion AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Creatô aotomattico de categoria"
 }
