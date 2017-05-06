@@ -1,17 +1,16 @@
 <?php
 
 class AutoCreateCategoryPages {
-		/**
-	 * Get an array of existing categories, with the name in the key and sort key in the value.
+	/**
+	 * Get an array of existing categories on this page, with the unprefixed name
 	 *
 	 * @return array
 	 */
-	static function getExistingCategories() {
-		// TODO: cache this. Probably have to add to said cache every time a category page is created,
-		// by us or manually
+	static function getExistingCategories( $page_cats ) {
 		$dbr = wfGetDB( DB_SLAVE );
-		$res = $dbr->select( 'page', 'page_title', array( 'page_namespace' => NS_CATEGORY ) );
-
+		$res = $dbr->select( 'page', 'page_title',
+			array( 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats )
+		);
 		$categories = array();
 		foreach ( $res as $row ) {
 			$categories[] = $row->page_title;
@@ -37,14 +36,14 @@ class AutoCreateCategoryPages {
 		// array keys will cast numeric category names to ints
 		// so we need to cast them back to strings to avoid potentially breaking things!
 		$page_cats = array_map( 'strval', array_keys( $page_cats ) );
-		$existing_cats = self::getExistingCategories();
+		$existing_cats = self::getExistingCategories( $page_cats );
 
 		// Determine which categories on page do not exist
 		$new_cats = array_diff( $page_cats, $existing_cats );
 		
 		if( count( $new_cats ) > 0 ) {
 			/*
-			 * TODO probably need to use User::newSystemUser()
+			 * @TODO probably need to use User::newSystemUser()
 			 * MW 1.27+ is supposed to use SessionManager, which requires some changes.
 			 * See https://www.mediawiki.org/wiki/Manual:SessionManager_and_AuthManager/Updating_tips
 			 */
