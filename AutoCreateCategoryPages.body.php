@@ -7,6 +7,9 @@ class AutoCreateCategoryPages {
 	 * @return array
 	 */
 	static function getExistingCategories( $page_cats ) {
+		if ( empty( $page_cats ) ) {
+			return [];
+		}
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select( 'page', 'page_title',
 			array( 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats )
@@ -40,7 +43,7 @@ class AutoCreateCategoryPages {
 
 		// Determine which categories on page do not exist
 		$new_cats = array_diff( $page_cats, $existing_cats );
-		
+
 		if( count( $new_cats ) > 0 ) {
 			/*
 			 * @TODO probably need to use User::newSystemUser()
@@ -62,8 +65,8 @@ class AutoCreateCategoryPages {
 			foreach ( $new_cats as $cat ) {
 				$catTitle = Title::newFromDBkey( $cat )->getText();
 				$stub = ( $wgAutoCreateCategoryStub != null ) ?
-						$wgAutoCreateCategoryStub
-						: wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
+					$wgAutoCreateCategoryStub
+					: wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
 
 				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
 				$catPage = new WikiPage( $safeTitle );

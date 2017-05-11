@@ -35,6 +35,7 @@ the maintenance of this one extension was taken up by
 The extension was released under GPLv3. See LICENSE file for more details.
 
 == Short changelog ==
+* Version 1.0.3, 2017-05-10: [bugfix] The extension caused page save to fail if no it had no categories
 * Version 1.0.2, 2017-03-25: A much improved query of pre-existing categories, by Brent Laabs (labster)
 * Version 1.0.1, 2016-02-01: Fix bug where only the first new category page was actually created
 * Version 1.0.0, 2015-05-24: Convert to extension registration for MW 1.25
