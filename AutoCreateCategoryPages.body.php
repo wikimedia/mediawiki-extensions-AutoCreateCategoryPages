@@ -10,7 +10,7 @@ class AutoCreateCategoryPages {
 		if ( empty( $page_cats ) ) {
 			return [];
 		}
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select( 'page', 'page_title',
 			array( 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats )
 		);
