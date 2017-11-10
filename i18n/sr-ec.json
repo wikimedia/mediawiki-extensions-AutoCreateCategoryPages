@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Zoranzoki21"
 		]
 	},
 	"autocreatecategorypages-desc": "Аутоматски направи недостајуће стране категорија по снимању",
+	"autocreatecategorypages-stub": "Ово је страница категорије.\nНаводи све странице у категорији \"$1\", као и све подкатегорије категорије \"$1\" ако постоје.",
+	"autocreatecategorypages-createdby": "Креирано аутоматски од стране екстензије AutoCreateCategoryPages",
 	"autocreatecategorypages-editor": "Аутоматско прављење категорија"
 }
