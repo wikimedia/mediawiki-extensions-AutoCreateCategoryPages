@@ -6,7 +6,6 @@
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingParamTag" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.WrongStyle" />
 		<exclude name="MediaWiki.Files.ClassMatchesFilename.NotMatch" />
-		<exclude name="PSR2.Files.EndFileNewline.NoneFound" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 	</rule>
 	<file>.</file>
