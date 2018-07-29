@@ -12,9 +12,9 @@ class AutoCreateCategoryPages {
 		}
 		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select( 'page', 'page_title',
-			array( 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats )
+			[ 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats ]
 		);
-		$categories = array();
+		$categories = [];
 		foreach ( $res as $row ) {
 			$categories[] = $row->page_title;
 		}
