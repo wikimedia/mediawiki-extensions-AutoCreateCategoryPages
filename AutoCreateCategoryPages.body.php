@@ -31,7 +31,6 @@ class AutoCreateCategoryPages {
 		WikiPage $article, $user, $content, $summary, $isMinor,
 		$isWatch, $section, $flags, $revision, $status, $baseRevId
 	) {
-
 		global $wgAutoCreateCategoryStub;
 
 		// Extract the categories on this page
@@ -44,7 +43,7 @@ class AutoCreateCategoryPages {
 		// Determine which categories on page do not exist
 		$new_cats = array_diff( $page_cats, $existing_cats );
 
-		if( count( $new_cats ) > 0 ) {
+		if ( count( $new_cats ) > 0 ) {
 			/*
 			 * @TODO probably need to use User::newSystemUser()
 			 * MW 1.27+ is supposed to use SessionManager, which requires some changes.
