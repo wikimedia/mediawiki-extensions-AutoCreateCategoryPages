@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"J Subhi"
+			"J Subhi",
+			"Ezagren"
 		]
 	},
-	"autocreatecategorypages-desc": "Ulah tungkaran kataguri nang hilang utumatis wayah manyimpan"
+	"autocreatecategorypages-desc": "Ulah sacara utumatis wayah disimpan tungkaran kataguri nang balum diulah",
+	"autocreatecategorypages-stub": "Ngini itu tungkaran kataguri.\n\nTungkaran ngini mandaptarakan samunyaan tungkaran di kataguri \"$1\" wan jua samunyaan rupa kataguri matan kataguri \"$1\" nang ada.",
+	"autocreatecategorypages-createdby": "Diulah sacara utumatis lawan pangaya AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Paulah kataguri utumatis"
 }
