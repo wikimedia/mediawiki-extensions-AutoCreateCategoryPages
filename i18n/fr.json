@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Grondin",
-			"PieRRoMaN"
+			"PieRRoMaN",
+			"Verdy p"
 		]
 	},
 	"autocreatecategorypages-desc": "Crée automatiquement les pages de catégorie manquantes lors de la publication",
-	"autocreatecategorypages-stub": "Ceci est une page de catégorie.\nElle liste toutes les pages comprises dans la catégorie « $1 » ainsi que toutes ses éventuelles sous-catégories.",
+	"autocreatecategorypages-stub": "Ceci est une page de catégorie.\nElle liste toutes les pages comprises dans la catégorie « $1 » ainsi que toutes ses éventuelles sous-catégories.",
 	"autocreatecategorypages-createdby": "Créée automatiquement par l’extension AutoCreateCategoryPages.",
 	"autocreatecategorypages-editor": "Créateur automatique de catégorie"
 }
