@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622"
+		]
+	},
+	"autocreatecategorypages-desc": "สร้างหน้าหมวดหมู่ที่ไม่มีอยู่โดยอัตโนมัติเมื่อบันทึก",
+	"autocreatecategorypages-stub": "นี่คือหน้าหมวดหมู่\nหน้านี้แสดงรายการหน้าทั้งหมดที่อยู่ในหมวดหมู่ \"$1\" รวมถึงหมวดหมู่ย่อยทั้งหมดของหมวดหมู่ \"$1\" หากมีอยู่",
+	"autocreatecategorypages-createdby": "สร้างขึ้นโดยอัตโนมัติโดยส่วนขยาย AutoCreateCategoryPages",
+	"autocreatecategorypages-editor": "ตัวสร้างหมวดหมู่อัตโนมัติ"
+}
