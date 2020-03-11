@@ -24,12 +24,8 @@
 		"AutoCreateCategoryPages": "AutoCreateCategoryPages.body.php"
 	},
 	"Hooks": {
-		"PageContentSaveComplete": [
-			"AutoCreateCategoryPages::onPageContentSaveComplete"
-		],
-		"UserGetReservedNames": [
-			"AutoCreateCategoryPages::onUserGetReservedNames"
-		]
+		"PageContentSaveComplete": "AutoCreateCategoryPages::onPageContentSaveComplete",
+		"UserGetReservedNames": "AutoCreateCategoryPages::onUserGetReservedNames"
 	},
 	"config": {
 		"AutoCreateCategoryStub": null
