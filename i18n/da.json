@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sarrus",
-			"Christian List"
+			"Christian List",
+			"Sarrus"
 		]
 	},
 	"autocreatecategorypages-desc": "Opret manglende kategorisider automatisk, når siden gemmes",
