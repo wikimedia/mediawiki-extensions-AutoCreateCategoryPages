@@ -21,7 +21,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"AutoCreateCategoryPages": "AutoCreateCategoryPages.body.php"
+		"AutoCreateCategoryPages": "src/AutoCreateCategoryPages.php"
 	},
 	"Hooks": {
 		"PageContentSaveComplete": "AutoCreateCategoryPages::onPageContentSaveComplete",
