@@ -4,9 +4,10 @@ class AutoCreateCategoryPages {
 	/**
 	 * Get an array of existing categories on this page, with the unprefixed name
 	 *
+	 * @param array $page_cats
 	 * @return array
 	 */
-	static function getExistingCategories( $page_cats ) {
+	private static function getExistingCategories( $page_cats ) {
 		if ( empty( $page_cats ) ) {
 			return [];
 		}
@@ -22,11 +23,24 @@ class AutoCreateCategoryPages {
 		return $categories;
 	}
 
-	/* after the page is saved, get all the categories
+	/**
+	 * After the page is saved, get all the categories
 	 * and see if they exist as "proper" pages; if not,
 	 * create a simple page for them automatically
+	 *
+	 * @param WikiPage $article
+	 * @param User $user
+	 * @param Content $content
+	 * @param string|CommentStoreComment $summary
+	 * @param bool $isMinor
+	 * @param mixed $isWatch
+	 * @param mixed $section
+	 * @param int $flags
+	 * @param Revision $revision
+	 * @param Status $status
+	 * @param bool|int $baseRevId
+	 * @return true
 	 */
-
 	public static function onPageContentSaveComplete(
 		WikiPage $article, $user, $content, $summary, $isMinor,
 		$isWatch, $section, $flags, $revision, $status, $baseRevId
@@ -82,9 +96,10 @@ class AutoCreateCategoryPages {
 		return true;
 	}
 
+	/**
+	 * @param string[] &$names
+	 */
 	public static function onUserGetReservedNames( &$names ) {
 		$names[] = 'msg:autocreatecategorypages-editor';
-
-		return true;
 	}
 }
