@@ -23,8 +23,8 @@
 	"AutoloadClasses": {
 		"AutoCreateCategoryPages": "src/AutoCreateCategoryPages.php"
 	},
+	"callback": "AutoCreateCategoryPages::registerExtension",
 	"Hooks": {
-		"PageContentSaveComplete": "AutoCreateCategoryPages::onPageContentSaveComplete",
 		"UserGetReservedNames": "AutoCreateCategoryPages::onUserGetReservedNames"
 	},
 	"config": {

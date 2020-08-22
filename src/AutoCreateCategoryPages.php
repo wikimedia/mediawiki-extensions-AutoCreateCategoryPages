@@ -1,6 +1,20 @@
 <?php
 
 class AutoCreateCategoryPages {
+
+	/**
+	 * Register hooks depending on version
+	 */
+	public static function registerExtension() {
+		global $wgHooks;
+		if ( class_exists( MediaWiki\HookContainer\HookContainer::class ) ) {
+			// MW 1.35+
+			$wgHooks['PageSaveComplete'][] = 'AutoCreateCategoryPages::onPageContentSaveComplete';
+		} else {
+			$wgHooks['PageContentSaveComplete'][] = 'AutoCreateCategoryPages::onPageContentSaveComplete';
+		}
+	}
+
 	/**
 	 * Get an array of existing categories on this page, with the unprefixed name
 	 *
@@ -30,20 +44,10 @@ class AutoCreateCategoryPages {
 	 *
 	 * @param WikiPage $article
 	 * @param User $user
-	 * @param Content $content
-	 * @param string|CommentStoreComment $summary
-	 * @param bool $isMinor
-	 * @param mixed $isWatch
-	 * @param mixed $section
-	 * @param int $flags
-	 * @param Revision $revision
-	 * @param Status $status
-	 * @param bool|int $baseRevId
 	 * @return true
 	 */
 	public static function onPageContentSaveComplete(
-		WikiPage $article, $user, $content, $summary, $isMinor,
-		$isWatch, $section, $flags, $revision, $status, $baseRevId
+		WikiPage $article, $user
 	) {
 		global $wgAutoCreateCategoryStub;
 
