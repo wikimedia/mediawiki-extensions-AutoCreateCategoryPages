@@ -4,8 +4,8 @@
 			"Crazymadlover"
 		]
 	},
-	"autocreatecategorypages-desc": "Crear categoría de páginas perdidas automáticamente al grabar",
-	"autocreatecategorypages-stub": "Esta es una página de categorías.\nAqx se enumeran todas las páginas en la categoría \"$1\" asx como todas las subcategorías en la categoría \"$1\" si las hubiere.",
+	"autocreatecategorypages-desc": "Crear categoría de páginas perdidas automáticamente al guardar",
+	"autocreatecategorypages-stub": "Esta es una página de categorías.\nAquí se enumeran todas las páginas en la categoría \"$1\" así como todas las subcategorías en la categoría \"$1\" si las hubiere.",
 	"autocreatecategorypages-createdby": "Creado automáticamente por la extensión AutoCreateCategoryPages.",
 	"autocreatecategorypages-editor": "Creador automático de categorías"
 }
