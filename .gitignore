@@ -5,3 +5,4 @@ composer.lock
 *~
 *.kate-swp
 .*.swp
+/.eslintcache
