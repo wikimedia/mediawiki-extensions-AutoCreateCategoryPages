@@ -73,7 +73,7 @@ class AutoCreateCategoryPages {
 			$editor = User::newFromName(
 				wfMessage( 'autocreatecategorypages-editor' )->inContentLanguage()->text()
 			);
-			if ( !$editor->isLoggedIn() ) {
+			if ( !$editor->isRegistered() ) {
 				$editor->addToDatabase();
 			}
 
