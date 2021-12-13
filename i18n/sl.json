@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
-	"autocreatecategorypages-desc": "Ustvari manjkajoče strani kategorij samodejno ob shranjevanju",
+	"autocreatecategorypages-desc": "Ob shranjevanju samodejno ustvari manjkajoče strani kategorij",
 	"autocreatecategorypages-stub": "To je stran kategorije.\nTukaj so navedene vse strani v kategoriji »$1«, kakor tudi vse podkategorije kategorije »$1«, če obstajajo.",
 	"autocreatecategorypages-createdby": "Ustvarjeno samodejno z razširitvijo AutoCreateCategoryPages.",
 	"autocreatecategorypages-editor": "Samodejni ustvarjalec kategorij"
