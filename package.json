@@ -1,4 +1,5 @@
 {
+	"name": "AutoCreateCategoryPages",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
