@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class AutoCreateCategoryPages {
 
 	/**
@@ -78,6 +80,12 @@ class AutoCreateCategoryPages {
 			}
 
 			$summary = wfMessage( 'autocreatecategorypages-createdby' )->inContentLanguage()->text();
+			if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+				// MW 1.36+
+				$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
+			} else {
+				$wikiPageFactory = null;
+			}
 
 			foreach ( $new_cats as $cat ) {
 				$catTitle = Title::newFromDBkey( $cat )->getText();
@@ -86,7 +94,12 @@ class AutoCreateCategoryPages {
 					: wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
 
 				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
-				$catPage = new WikiPage( $safeTitle );
+				if ( $wikiPageFactory !== null ) {
+					// MW 1.36+
+					$catPage = $wikiPageFactory->newFromTitle( $safeTitle );
+				} else {
+					$catPage = new WikiPage( $safeTitle );
+				}
 				try {
 					$content = ContentHandler::makeContent( $stub, $safeTitle );
 					if ( method_exists( $catPage, 'doUserEditContent' ) ) {
