@@ -7,7 +7,7 @@
 		]
 	},
 	"autocreatecategorypages-desc": "Automatski napravi nedostajuće strane kategorija po snimanju",
-	"autocreatecategorypages-stub": "Ovo je stranica kategorije. Navodi sve stranice u kategoriji \"$1\", kao i sve podkategorije kategorije \"$1\" ako postoje.",
+	"autocreatecategorypages-stub": "Ovo je stranica kategorije.\nNavodi sve stranice u kategoriji \"$1\", kao i sve podkategorije kategorije \"$1\" ako postoje.",
 	"autocreatecategorypages-createdby": "Kreirano automatski od strane ekstenzije AutoCreateCategoryPages",
 	"autocreatecategorypages-editor": "Automatsko pravljenje kategorija"
 }
