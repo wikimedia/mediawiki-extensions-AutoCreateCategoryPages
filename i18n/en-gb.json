@@ -5,6 +5,5 @@
 			"Piano1forte2"
 		]
 	},
-	"autocreatecategorypages-desc": "Create missing category pages automatically when saving",
-	"autocreatecategorypages-stub": "This is a category page.\nIt lists all of the pages in category '$1' as well as all subcategories of category '$1' if any exist."
+	"autocreatecategorypages-desc": "Create missing category pages automatically when saving"
 }
