@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"autocreatecategorypages-desc": "Po spremanju, automarski pravi stranice koje nedostaju u kategoriji",
+	"autocreatecategorypages-stub": "Ovo je kategorička stranica.\nOna prikazuje sve stranice u kategoriji \"$1\", kao i sve potkategorije kategorije \"$1\", ako postoje.",
+	"autocreatecategorypages-createdby": "Automatski napravljeno od strane dodatka AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "Automatski kreator kategorija"
+}
