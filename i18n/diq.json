@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Kumkumuk",
 			"Marmase",
 			"Mirzali"
 		]
 	},
 	"autocreatecategorypages-desc": "Kes qeyd kero se kemi peranê kategoriya vırazeno",
-	"autocreatecategorypages-stub": "Na yu pera kategoriya ya. Peranê Kategoriya da $1  hrmın u eger estê se bın peranê Kategoriya da $1 liste kena",
-	"autocreatecategorypages-createdby": "Otomatikmen oleken dê  AutoCreateCategoryPages ra vıraziya ya",
+	"autocreatecategorypages-stub": "Na yu pera kategoriya ya. Peranê Kategoriya da $1 hrmın u eger estê se bın peranê Kategoriya da $1 liste kena",
+	"autocreatecategorypages-createdby": "Otomatikmen oleken dê AutoCreateCategoryPages ra vıraziya ya",
 	"autocreatecategorypages-editor": "Kategoriyevıraştoğo otomatik"
 }
