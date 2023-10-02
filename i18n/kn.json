@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"Amire80"
 		]
 	},
-	"autocreatecategorypages-desc": "ಉಳಿಸುವಾಗ ತಪ್ಪಿಹೋದ ವರ್ಗಪುಟಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ  ಸೃಜಿಸಿ",
+	"autocreatecategorypages-desc": "ಉಳಿಸುವಾಗ ತಪ್ಪಿಹೋದ ವರ್ಗಪುಟಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೃಜಿಸಿ",
 	"autocreatecategorypages-stub": "ಇದು ಒಂದು ವರ್ಗಪುಟ.\nಇದು \"$1\"ವರ್ಗದ ಎಲ್ಲಾ ಪುಟ ಹಾಗೂ \"$1\"ಪುಟದ ಉಪಪುಟಗಳು ಅಸ್ವಿತ್ವದಲ್ಲಿದ್ದರೆ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
 	"autocreatecategorypages-createdby": "ವರ್ಗಪುಟಗಳ ಸ್ವಯಂ ಸೃಜಿಸುವ ವಿಸ್ತರಣೆಯಿಂದ ಈ ಪುಟವು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೃಜಿಸಲ್ಪಟ್ಟಿದೆ.",
 	"autocreatecategorypages-editor": "ಸ್ವಯಂಚಾಲಿತ ವರ್ಗಪುಟ ಸೃಜಕ"

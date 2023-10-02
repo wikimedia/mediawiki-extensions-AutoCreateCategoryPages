@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Игорь Бродский"
+			"Игорь Бродский",
+			"Amire80"
 		]
 	},
 	"autocreatecategorypages-desc": "Sädab kategorijad, kudambid völ ei ole olnu, avtomatižikš mušthopanendan aigan",
-	"autocreatecategorypages-stub": "Nece om kategorijan lehtpol'.\nTäs om kaik \"$1\"-kategorijan lehtpoled i kaik  \"$1\"-kategorijan alakategorijad, ku ned oma olmas.",
+	"autocreatecategorypages-stub": "Nece om kategorijan lehtpol'.\nTäs om kaik \"$1\"-kategorijan lehtpoled i kaik \"$1\"-kategorijan alakategorijad, ku ned oma olmas.",
 	"autocreatecategorypages-createdby": "Sätud avtomatižikš AutoCreateCategoryPages-ližan abul.",
 	"autocreatecategorypages-editor": "Avtomatine kategorijoiden sädai"
 }
