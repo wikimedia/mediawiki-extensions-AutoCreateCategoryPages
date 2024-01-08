@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"TRYPPN"
+			"TRYPPN",
+			"Fahimrazick"
 		]
 	},
-	"autocreatecategorypages-desc": "விடுபட்டுப்போன பகுப்பு பக்கங்களை சேமிக்கும் போது தானாகவே உருவாக்கவும்"
+	"autocreatecategorypages-desc": "சேமிக்கும் போது விடுபட்ட பகுப்புப் பக்கங்களைத் தானாகவே ஆக்கு"
 }
