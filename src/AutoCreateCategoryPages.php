@@ -21,6 +21,7 @@ class AutoCreateCategoryPages {
 	 * Get an array of existing categories on this page, with the unprefixed name
 	 *
 	 * @param array $page_cats
+	 *
 	 * @return array
 	 */
 	private static function getExistingCategories( $page_cats ) {
@@ -28,8 +29,11 @@ class AutoCreateCategoryPages {
 			return [];
 		}
 		$dbr = wfGetDB( DB_REPLICA );
-		$res = $dbr->select( 'page', 'page_title',
-			[ 'page_namespace' => NS_CATEGORY, 'page_title' => $page_cats ]
+		$res = $dbr->select(
+			'page', 'page_title', [
+				'page_namespace' => NS_CATEGORY,
+				'page_title' => $page_cats
+			]
 		);
 		$categories = [];
 		foreach ( $res as $row ) {
@@ -46,18 +50,26 @@ class AutoCreateCategoryPages {
 	 *
 	 * @param WikiPage $article
 	 * @param User $user
+	 *
 	 * @return true
 	 */
 	public static function onPageContentSaveComplete(
-		WikiPage $article, $user
+		WikiPage $article,
+		$user
 	) {
 		global $wgAutoCreateCategoryStub;
 
-		// Extract the categories on this page
-		$page_cats = $article->getParserOutput( $article->makeParserOptions( $user ) )->getCategories();
-		// array keys will cast numeric category names to ints
-		// so we need to cast them back to strings to avoid potentially breaking things!
-		$page_cats = array_map( 'strval', array_keys( $page_cats ) );
+		// Get a ParserOutput
+		$parser_out = $article->getParserOutput();
+
+		// Check if on 1.40+, getCategoryNames exists
+		if ( method_exists( $parser_out, "getCategoryNames" ) ) {
+			// Get the category names
+			$page_cats = $parser_out->getCategoryNames();
+		} else {
+			$page_cats = $parser_out->getCategories();
+			$page_cats = array_map( 'strval', array_keys( $page_cats ) );
+		}
 		$existing_cats = self::getExistingCategories( $page_cats );
 
 		// Determine which categories on page do not exist
@@ -89,9 +101,12 @@ class AutoCreateCategoryPages {
 
 			foreach ( $new_cats as $cat ) {
 				$catTitle = Title::newFromDBkey( $cat )->getText();
-				$stub = ( $wgAutoCreateCategoryStub != null ) ?
-					$wgAutoCreateCategoryStub
-					: wfMessage( 'autocreatecategorypages-stub', $catTitle )->inContentLanguage()->text();
+				$stub = ( $wgAutoCreateCategoryStub != null )
+					? $wgAutoCreateCategoryStub
+					: wfMessage(
+						'autocreatecategorypages-stub',
+						$catTitle
+					)->inContentLanguage()->text();
 
 				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
 				if ( $wikiPageFactory !== null ) {
