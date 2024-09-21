@@ -28,7 +28,7 @@ class AutoCreateCategoryPages {
 		if ( empty( $page_cats ) ) {
 			return [];
 		}
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'page', 'page_title', [
 				'page_namespace' => NS_CATEGORY,

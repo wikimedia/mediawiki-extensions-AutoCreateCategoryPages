@@ -13,7 +13,7 @@
 	"descriptionmsg": "autocreatecategorypages-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.28.0"
 	},
 	"MessagesDirs": {
 		"AutoCreateCategoryPages": [
