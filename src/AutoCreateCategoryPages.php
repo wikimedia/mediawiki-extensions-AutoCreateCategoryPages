@@ -30,10 +30,13 @@ class AutoCreateCategoryPages {
 		}
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
-			'page', 'page_title', [
+			'page',
+			'page_title',
+			[
 				'page_namespace' => NS_CATEGORY,
 				'page_title' => $page_cats
-			]
+			],
+			__METHOD__
 		);
 		$categories = [];
 		foreach ( $res as $row ) {
