@@ -103,7 +103,12 @@ class AutoCreateCategoryPages {
 			}
 
 			foreach ( $new_cats as $cat ) {
-				$catTitle = Title::newFromDBkey( $cat )->getText();
+				if ( class_exists( 'Title' ) ) {
+					$catTitle = Title::newFromDBkey( $cat )->getText();
+				} else {
+					// MW 1.39.4+
+					$catTitle = \MediaWiki\Title\Title::newFromDBkey( $cat )->getText();
+				}
 				$stub = ( $wgAutoCreateCategoryStub != null )
 					? $wgAutoCreateCategoryStub
 					: wfMessage(
@@ -111,7 +116,12 @@ class AutoCreateCategoryPages {
 						$catTitle
 					)->inContentLanguage()->text();
 
-				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
+				if ( class_exists( 'Title' ) ) {
+					$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
+				} else {
+					// MW 1.39.4+
+					$safeTitle = \MediaWiki\Title\Title::makeTitleSafe( NS_CATEGORY, $cat );
+				}
 				if ( $wikiPageFactory !== null ) {
 					// MW 1.36+
 					$catPage = $wikiPageFactory->newFromTitle( $safeTitle );
