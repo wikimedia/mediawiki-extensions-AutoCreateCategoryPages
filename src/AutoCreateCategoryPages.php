@@ -2,20 +2,10 @@
 
 use MediaWiki\MediaWikiServices;
 
-class AutoCreateCategoryPages {
-
-	/**
-	 * Register hooks depending on version
-	 */
-	public static function registerExtension() {
-		global $wgHooks;
-		if ( class_exists( MediaWiki\HookContainer\HookContainer::class ) ) {
-			// MW 1.35+
-			$wgHooks['PageSaveComplete'][] = 'AutoCreateCategoryPages::onPageContentSaveComplete';
-		} else {
-			$wgHooks['PageContentSaveComplete'][] = 'AutoCreateCategoryPages::onPageContentSaveComplete';
-		}
-	}
+class AutoCreateCategoryPages implements
+	\MediaWiki\Storage\Hook\PageSaveCompleteHook,
+	\MediaWiki\User\Hook\UserGetReservedNamesHook
+{
 
 	/**
 	 * Get an array of existing categories on this page, with the unprefixed name
@@ -51,19 +41,13 @@ class AutoCreateCategoryPages {
 	 * and see if they exist as "proper" pages; if not,
 	 * create a simple page for them automatically
 	 *
-	 * @param WikiPage $article
-	 * @param User $user
-	 *
-	 * @return true
+	 * @inheritDoc
 	 */
-	public static function onPageContentSaveComplete(
-		WikiPage $article,
-		$user
-	) {
+	public function onPageSaveComplete( $wikiPage, $user, $summary, $flags, $revisionRecord, $editResult ) {
 		global $wgAutoCreateCategoryStub;
 
 		// Get a ParserOutput
-		$parser_out = $article->getParserOutput();
+		$parser_out = $wikiPage->getParserOutput();
 
 		// Check if on 1.40+, getCategoryNames exists
 		if ( method_exists( $parser_out, "getCategoryNames" ) ) {
@@ -147,9 +131,10 @@ class AutoCreateCategoryPages {
 	}
 
 	/**
-	 * @param string[] &$names
+	 * @inheritDoc
 	 */
-	public static function onUserGetReservedNames( &$names ) {
-		$names[] = 'msg:autocreatecategorypages-editor';
+	public function onUserGetReservedNames( &$reservedUsernames ) {
+		$reservedUsernames[] = 'msg:autocreatecategorypages-editor';
 	}
+
 }
