@@ -1,11 +1,21 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\Title\Title;
+use MediaWiki\User\UserFactory;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class AutoCreateCategoryPages implements
 	\MediaWiki\Storage\Hook\PageSaveCompleteHook,
 	\MediaWiki\User\Hook\UserGetReservedNamesHook
 {
+
+	public function __construct(
+		private readonly IConnectionProvider $connectionProvider,
+		private readonly UserFactory $userFactory,
+		private readonly WikiPageFactory $wikiPageFactory,
+	) {
+	}
 
 	/**
 	 * Get an array of existing categories on this page, with the unprefixed name
@@ -14,11 +24,11 @@ class AutoCreateCategoryPages implements
 	 *
 	 * @return array
 	 */
-	private static function getExistingCategories( $page_cats ) {
+	private function getExistingCategories( $page_cats ) {
 		if ( empty( $page_cats ) ) {
 			return [];
 		}
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->connectionProvider->getReplicaDatabase();
 		$res = $dbr->select(
 			'page',
 			'page_title',
@@ -49,15 +59,8 @@ class AutoCreateCategoryPages implements
 		// Get a ParserOutput
 		$parser_out = $wikiPage->getParserOutput();
 
-		// Check if on 1.40+, getCategoryNames exists
-		if ( method_exists( $parser_out, "getCategoryNames" ) ) {
-			// Get the category names
-			$page_cats = $parser_out->getCategoryNames();
-		} else {
-			$page_cats = $parser_out->getCategories();
-			$page_cats = array_map( 'strval', array_keys( $page_cats ) );
-		}
-		$existing_cats = self::getExistingCategories( $page_cats );
+		$page_cats = $parser_out->getCategoryNames();
+		$existing_cats = $this->getExistingCategories( $page_cats );
 
 		// Determine which categories on page do not exist
 		$new_cats = array_diff( $page_cats, $existing_cats );
@@ -71,7 +74,7 @@ class AutoCreateCategoryPages implements
 
 			// Create a user object for the editing user and add it to the database
 			// if it is not there already
-			$editor = User::newFromName(
+			$editor = $this->userFactory->newFromName(
 				wfMessage( 'autocreatecategorypages-editor' )->inContentLanguage()->text()
 			);
 			if ( !$editor->isRegistered() ) {
@@ -79,20 +82,9 @@ class AutoCreateCategoryPages implements
 			}
 
 			$summary = wfMessage( 'autocreatecategorypages-createdby' )->inContentLanguage()->text();
-			if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-				// MW 1.36+
-				$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
-			} else {
-				$wikiPageFactory = null;
-			}
 
 			foreach ( $new_cats as $cat ) {
-				if ( class_exists( 'Title' ) ) {
-					$catTitle = Title::newFromDBkey( $cat )->getText();
-				} else {
-					// MW 1.39.4+
-					$catTitle = \MediaWiki\Title\Title::newFromDBkey( $cat )->getText();
-				}
+				$catTitle = Title::newFromDBkey( $cat )->getText();
 				$stub = ( $wgAutoCreateCategoryStub != null )
 					? $wgAutoCreateCategoryStub
 					: wfMessage(
@@ -100,26 +92,11 @@ class AutoCreateCategoryPages implements
 						$catTitle
 					)->inContentLanguage()->text();
 
-				if ( class_exists( 'Title' ) ) {
-					$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
-				} else {
-					// MW 1.39.4+
-					$safeTitle = \MediaWiki\Title\Title::makeTitleSafe( NS_CATEGORY, $cat );
-				}
-				if ( $wikiPageFactory !== null ) {
-					// MW 1.36+
-					$catPage = $wikiPageFactory->newFromTitle( $safeTitle );
-				} else {
-					$catPage = new WikiPage( $safeTitle );
-				}
+				$safeTitle = Title::makeTitleSafe( NS_CATEGORY, $cat );
+				$catPage = $this->wikiPageFactory->newFromTitle( $safeTitle );
 				try {
 					$content = ContentHandler::makeContent( $stub, $safeTitle );
-					if ( method_exists( $catPage, 'doUserEditContent' ) ) {
-						// MW 1.36+
-						$catPage->doUserEditContent( $content, $editor, $summary, EDIT_NEW & EDIT_SUPPRESS_RC );
-					} else {
-						$catPage->doEditContent( $content, $summary, EDIT_NEW & EDIT_SUPPRESS_RC, false, $editor );
-					}
+					$catPage->doUserEditContent( $content, $editor, $summary, EDIT_NEW & EDIT_SUPPRESS_RC );
 				} catch ( MWException $e ) {
 					/* fail silently...
 					* todo: what can go wrong here? */
