@@ -22,28 +22,22 @@ class AutoCreateCategoryPages implements
 	 *
 	 * @param array $page_cats
 	 *
-	 * @return array
+	 * @return string[]
 	 */
 	private function getExistingCategories( $page_cats ) {
 		if ( empty( $page_cats ) ) {
 			return [];
 		}
 		$dbr = $this->connectionProvider->getReplicaDatabase();
-		$res = $dbr->select(
-			'page',
-			'page_title',
-			[
+		return $dbr->newSelectQueryBuilder()
+			->select( 'page_title' )
+			->from( 'page' )
+			->where( [
 				'page_namespace' => NS_CATEGORY,
 				'page_title' => $page_cats
-			],
-			__METHOD__
-		);
-		$categories = [];
-		foreach ( $res as $row ) {
-			$categories[] = $row->page_title;
-		}
-
-		return $categories;
+			] )
+			->caller( __METHOD__ )
+			->fetchFieldValues();
 	}
 
 	/**
