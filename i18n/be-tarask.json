@@ -3,10 +3,11 @@
 		"authors": [
 			"EugeneZelenko",
 			"Jim-by",
+			"Red Winged Duck",
 			"Ucukor"
 		]
 	},
-	"autocreatecategorypages-desc": "Стварае няісныя катэґорыі аўтаматычна пад час захаваньня",
+	"autocreatecategorypages-desc": "Стварае няісныя катэгорыі аўтаматычна падчас захаваньня",
 	"autocreatecategorypages-stub": "Гэта старонка катэгорыі.\nЯна ўтрымлівае сьпіс старонак у катэгорыі «$1», а таксама падкатэгорыі «$1», калі яны існуюць.",
 	"autocreatecategorypages-createdby": "Створана аўтаматычна праз пашырэньне AutoCreateCategoryPages.",
 	"autocreatecategorypages-editor": "Аўтаматычнае стварэньне катэгорыяў"
