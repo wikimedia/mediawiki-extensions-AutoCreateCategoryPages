@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"autocreatecategorypages-desc": "يخلق صفحات التصانيف الناقصة تلقائياً عند الحفظ.",
+	"autocreatecategorypages-stub": "هاد صفحة تصنيف.\nتدرج كل الصفحات اللي في التصنيف \"$1\" وكل التصانيف الفرعية تاع التصنيف \"$1\" إذا كانو موجودين.",
+	"autocreatecategorypages-createdby": "تمشي مع \"تم\" حسب القاعدة. نعاود الصياغة بلا \"تم\":\n\nتتخلق تلقائياً بواسطة الإضافة AutoCreateCategoryPages.",
+	"autocreatecategorypages-editor": "خالق التصانيف التلقائي"
+}
