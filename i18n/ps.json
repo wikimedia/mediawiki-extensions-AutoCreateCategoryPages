@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"autocreatecategorypages-desc": "خوندي‌کولو سره په خپلکاري ډول د ورکې وېشنيزې مخونه جوړول",
+	"autocreatecategorypages-stub": "دا وېشنيزه مخ دی.\nدا د \"$1\" وېشنيزې ټول مخونه او څېرمه‌وېشنيزې، که چېرې شتون ولري، لړليکوي.",
+	"autocreatecategorypages-createdby": "د خپلکاره‌وېشنيزې‌مخونه‌جوړولو شاتاړي له‌خوا په خپلکاري ډول جوړ شوی.",
 	"autocreatecategorypages-editor": "خپلکاره وېشنيزه جوړونکی"
 }
